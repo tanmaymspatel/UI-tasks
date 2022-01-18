@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Salon Appointment Form</title>
+</head>
+<body>
+    <section>
+        <div>
+            <h2>Fill the form below for your best experience!</h2>
+        </div>
+        <div class="contactForm" style="width:400px;">
+            <form action="">
+                <fieldset style="padding: 12px 20px;">
+                    <legend>Appointment Form</legend>
+                    <div style="margin-top:15px" class="name">
+                        <div>
+                            <label for="fullName">Name :*</label>
+                        </div>
+                        <div style="margin-top:3px;">
+                            <input type="text" name="fullName" id="fullName" value="John Doe" style="width:100%;" required autofocus maxlength="20">
+                        </div>    
+                    </div>
+                    <div style="margin-top:15px" class="contact-number" >
+                        <div>
+                            <label for="contactNumber">Contact Number :*</label>
+                        </div>
+                        <div style="margin-top:3px;">
+                            <input type="number" name="contactNumber" id="contactNumber" value="9999999999" style="width:100%;" required>
+                        </div>    
+                    </div>
+                    <div style="margin-top:15px" class="email">
+                        <div>
+                            <label for="email">Email :</label>
+                        </div>
+                        <div style="margin-top:3px;">
+                            <input type="email" name="email" id="email" value="sample@gmail.com" style="width:100%;" >
+                        </div>
+                    </div>
+                    <div style="margin-top:15px" class="city">
+                        <div>
+                            <label for="city">City :</label>
+                        </div>
+                        <div style="margin-top:3px;">
+                            <input type="text" name="city" id="city" value="Valsad" style="width:100%;" readonly>
+                        </div>
+                    </div>
+                    <div style="margin-top:15px" class="date">
+                        <div>
+                            <label for="date">Date of Appointment :</label>
+                        </div>
+                        <div style="margin-top:3px;">
+                            <input type="date" name="date" id="date" style="width:100%;">
+                        </div>
+                    </div>
+                    <div style="margin-top:15px" class="question">
+                        <div>
+                            <label for="radio">Are you filling the form for first time?</label>
+                        </div>
+                        <div style="margin-top:3px;">
+                            <input type="radio" name="answer" id="yes" value="Yes">
+                            <label for="yes">Yes</label>
+                            <input type="radio" name="answer" id="no" value="No">
+                            <label for="no">No</label>
+                        </div>
+                    </div>
+                    <div style="margin-top:15px" class="language">
+                        <div>
+                            <label for="lan">which language do you prefer?</label>
+                        </div>
+                        <div style="margin-top:3px;">
+                            <input type="checkbox" name="language" id="gujarati" value="Gujarati">
+                            <label for="gujarati">Gujarati</label>
+                            <input type="checkbox" name="language" id="english" value="English">
+                            <label for="english">English</label>
+                            <input type="checkbox" name="language" id="hindi" value="Hindi">
+                            <label for="hindi">Hindi</label>
+                        </div>
+                    </div>
+                    <div style="margin-top:15px" class="services">
+                        <label for="service">Select Service :</label>
+                        <select style="margin-top:3px;" name="service" id="service">
+                            <option value="select">Select a Service</option>
+                            <option value="hairCut">Hair Cut</option>
+                            <option value="haircolor">Hair Color</option>
+                            <option value="hairStraightening">Hair Straightening</option>
+                            <option value="hairExtension">Hair Extension</option>
+                            <option value="headMessage">Head Message</option>
+                            <option value="beardTrimming" selected>Beard Trimming</option>
+                            <option value="facial">Facial</option>
+                            <option value="groomPack">Groom Pack</option>
+                        </select>
+                    </div>
+                    <div style="margin-top:15px" class="requirements">
+                        <div>
+                            <label for="requirements">Enter your special requirements below:</label>
+                        </div>
+                        <textarea style="margin-top:3px; width: 100%;" name="requirements" id="requirements" cols="20" rows="5" placeholder="Enter Your Requirements" ></textarea>
+                    </div>
+                    <div style="margin-top:15px" class="buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body> 
+</html>
