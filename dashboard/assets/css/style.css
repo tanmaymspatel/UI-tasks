@@ -1,0 +1,118 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body, .mainWrapper, .dashboard, .sidebarContent, .mainContent{
+    height: 100%;
+}
+
+.displayflex{
+    display: flex;
+}
+.mainContentWrapper{
+    flex-grow: 1;
+    flex-direction: column;
+} 
+
+/* sidebar */
+#mainSidebar {
+    flex-basis: 300px;
+    border-right: 1px solid black;
+}
+aside#mainSidebar ul {
+    list-style: none;
+    padding: 20px 60px;
+}
+.ul.sideNav-1, .ul.sideNav-2 {
+    padding: 30px 0;
+}
+.sidebarNav-1 {
+    border-bottom: 1px solid #0000001f;
+}
+.sidebarNav-2 {
+    flex-grow: 1;
+}
+.sidebarNav-1, .sidebarNav-2 {
+    width: 100%;
+}
+.icon{
+    font-size:24px;
+}
+ul.sideNav-1 li, ul.sideNav-2 li {
+    padding: 8px 10px;
+    margin: 6px 0;
+} 
+
+ul.sideNav-1 li:first-child {
+    background-color:#f7f6f9;
+}
+ul.sideNav-1 li:first-child a {
+    color: black;
+}
+a.nav-link {
+    font-size: 24px;
+    text-decoration: none;
+    color: #7c7979;
+}
+.sidebarContent {
+    flex-direction: column;
+}
+#mainSidebar .sidebarContent figure.logo {
+    flex-basis: 80px;
+    border-bottom: 1px solid black;
+    justify-content: center;
+    flex-shrink: 0;
+}
+#mainSidebar figure.logo img{
+    width: 20px;
+}
+#mainSidebar figure.logo .logo-text {
+    align-self: center;
+    margin-left: 10px;
+    font-weight: 700;
+}
+#mainSidebar .sidebarContent nav.sidebarNavigation {
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* header */
+#header {
+    flex-basis: 80px;
+    border-bottom: 1px solid black;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f8f8fa;
+    flex-shrink: 0;
+}
+
+.headerSearch {
+    flex-grow: 1;
+}
+input#search {
+    width: 80%;
+    padding: 5px;
+}
+.headerbutton {
+    flex-basis: 200px;
+}
+.headerbtn {
+    padding: 9px 25px;
+    color: white;
+    background: #18dca1;
+    border-color: #18dca1;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/* main section */
+.mainContent{
+    flex-grow: 1;
+    background-color: #fcfbfe;
+}
