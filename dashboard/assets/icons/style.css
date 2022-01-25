@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'app';
-  src:  url('fonts/app.eot?xgwp2t');
-  src:  url('fonts/app.eot?xgwp2t#iefix') format('embedded-opentype'),
-    url('fonts/app.ttf?xgwp2t') format('truetype'),
-    url('fonts/app.woff?xgwp2t') format('woff'),
-    url('fonts/app.svg?xgwp2t#app') format('svg');
+  src:  url('fonts/app.eot?mvfour');
+  src:  url('fonts/app.eot?mvfour#iefix') format('embedded-opentype'),
+    url('fonts/app.ttf?mvfour') format('truetype'),
+    url('fonts/app.woff?mvfour') format('woff'),
+    url('fonts/app.svg?mvfour#app') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,12 +25,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-calendar:before {
-  content: "\e900";
-}
-.icon-help:before {
-  content: "\e901";
-}
 .icon-log-out:before {
   content: "\e902";
 }
@@ -43,9 +37,18 @@
 .icon-compare_arrows:before {
   content: "\e905";
 }
-.icon-product-hunt:before {
-  content: "\e906";
+.icon-calendar:before {
+  content: "\e900";
+}
+.icon-help:before {
+  content: "\e901";
 }
 .icon-radio-checked:before {
   content: "\ea54";
+}
+.icon-product-hunt:before {
+  content: "\e906";
+}
+.icon-search:before {
+  content: "\e907";
 }
