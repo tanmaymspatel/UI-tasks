@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body, .wrapper, #sidebar{
+    height: 100%;
+}
+body{
+    overflow: hidden;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+/* general css */
+.displayFlex{
+    display: flex;
+}
+.flexCol{
+    flex-direction: column;
+}
+.flexGrow1{
+    flex-grow: 1;
+}
+.alignItemsCenter{
+    align-items: center;
+}
+.justifyContentCenter{
+    justify-content: center;
+}
+.icon{
+    cursor: pointer;
+}
+
+/* sidebar css */
+
+#sidebar{
+    flex-basis: 150px;
+    background-color: #f8f8f8;
+    margin-left: 0;
+    padding: 0 1rem;
+    transition: 0.2s all;
+}
+
+/* side bar header */
+.sidebarHeader {
+    flex-basis: 50px;
+}
+.icon-menu {
+    font-size: 1.5rem;
+    padding-left: 0.75rem;
+}
+.sidebarHeaderHeading {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+
+.navLink .icon{
+    font-size: 1.2rem;
+}
+.sidebarContent{
+    overflow: auto;
+    padding-top: 2rem;
+}
+.linkName{
+    font-size: 1.2rem;
+}
+.linkName, .sidebarHeaderHeading{
+    opacity: 1;
+    transition: 0.2s all;
+}
+/* navigation */
+li {
+    padding: 0.7rem 0.5rem;
+    margin: 0.5rem 0.2rem;
+    list-style: none;
+}
+
+
+/* after checked */
+
+#check{
+    display: none;
+}
+
+input#check:checked~ .wrapper #sidebar {
+    margin-left: -190px;
+}
+
+input#check:checked~ .wrapper #sidebar .icon {
+    margin-left: 180px;
+}
+
+input#check:checked~ .wrapper #sidebar .linkName, input#check:checked~ .wrapper #sidebar .sidebarHeaderHeading{
+    display: none;
+}
