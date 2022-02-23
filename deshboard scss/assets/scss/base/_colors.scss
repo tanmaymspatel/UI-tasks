@@ -1,0 +1,91 @@
+// Theme Colors
+$primary: #438ffe;
+$secondary: #160e4d;
+$warning: #fe764b;
+$white: #ffffff;
+$success: #8bc38a;
+$info: #83bcbd;
+$grey: #abb1bf;
+$grey-text-color: #c1c5d0;
+$active: #61a0fd;
+
+// header 
+$header-icon : $primary;
+$header-search-icon-color : $grey;
+$header-search-background : #f5f7f9;
+$header-search-text-color: $grey-text-color;
+$header-search-btn-color : $primary;
+$header-icon-color : $grey;
+$header-notification-color : $warning;
+$header-avatar-background: #83bcbd;
+
+// sidebar
+$icon-color: $grey;
+$icon-color-active: $primary;
+
+
+// main body
+$body-bg: #f8f8f8;
+$main-title-color : $secondary;
+
+  // cards
+  $card-background: $white;
+  $card-analytics-title-color : $grey-text-color;
+  $card-number-color : $secondary;
+  $card-border-color : $grey-text-color;
+  $card-text-after-border: $grey-text-color;
+  $card-add-product-text: $active;
+  // $card-view-icon: 
+  $card-product-icon: $success;
+  $card-user-icon: $primary;
+  $card-sells-icon : $info;
+  $card-line-orange:$warning;
+  $card-line-green: $success;
+
+  //card hover
+  $card-background-hover : $primary;
+  $card-icon-color-hover : $primary;
+
+// table
+$table-background: $white;
+$table-heading-color: $secondary;
+
+
+//   // Body
+// $body-color: $white;
+// $body-bg: #1d2329;
+
+// // Fonts
+// $text-muted: #9fa9bc;
+
+// // Sidebar
+// $sidebar-bg: #15181b;
+// $primary-nav-bg: #15181b;
+// $nav-text: $text-muted;
+// $nav-active-color: linear-gradient(to right, #252c39, #15181b);
+// $nav-active-text: $white;
+
+// // Header
+// $badge-bg: $success;
+
+// // Topbar
+// $topbar-bg: #16191c;
+
+// // Card
+// $card-bg: #2d353b;
+// $card-hover-bg: $primary;
+// $card-icon-color: $warning;
+// $card-text-sm-color: #595d69;
+
+// // Table
+// $table-header-bg: #354048;
+// $table-cell-border-color:#29314a;
+// $table-heading-color:#68707b;
+
+// $text-colors: (
+//   "primary": $primary,
+//   "warning": $warning,
+//   "success": $success,
+//   "danger": $danger,
+//   "info": $info
+// );

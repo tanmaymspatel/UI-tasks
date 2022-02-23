@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard with scss</title>
+    <link rel="stylesheet" href="./assets/icons/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper h-100 d-flex flex-column">
+        <header class="top-nav d-flex align-items-center">
+            <div class="top-left-nav d-flex flex-grow-1">
+                <div class="logo">
+                    <span class="icon icon-logo"></span>
+                </div>
+                <div class="search-bar d-flex">
+                    <div class="top-search">
+                        <input type="search" id="search" placeholder="Search for transection, items, etc">
+                        <span id="search-icon" class="icon-search"></span>
+                    </div>
+                    <div class="search-button">
+                        <button class="btn search-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="top-right-nav d-flex">
+                <div class="notifications">
+                    <span class="icon icon-message-outlined"></span>
+                    <span class="icon icon-bell"></span>
+                </div>
+                <div class="user-image">
+                    <figure>
+                        <img class="user-avatar" src="./assets/images/user-avatar.svg" alt="User Image">
+                    </figure>
+                </div>
+                <span class="drop-down icon-drop-down"></span>
+            </div>
+        </header>
+        <div class="main d-flex flex-grow-1">
+            <aside id="sidebar" class="d-flex flex-column align-items-center">
+                <ul class="side-nav-1 flex-grow-1">
+                    <li><a href=""><span class="icon icon-dashboard"></span></a></li>
+                    <li><a href=""><span class="icon icon-cart"></span></a></li>
+                    <li><a href=""><span class="icon icon-notepad"></span></a></li>
+                    <li><a href=""><span class="icon icon-settings"></span></a></li>
+                </ul>
+                <ul class="side-nav-2">
+                    <li><a href=""><span class="icon icon-warning"></span></a></li>
+                    <li><a href=""><span class="icon icon-logout"></span></a></li>
+                </ul>
+            </aside>
+            <main class="main-content flex-grow-1">
+                <h2 class="heading-title">Dashboard</h2>
+                <section class="section analytics-section">
+                    <div class="row">
+                        <div class="card">
+                            <div class="top-part-card">
+                                <div class="card-icons">
+                                    <span class="icon icon-eye"></span>
+                                    <span class="icon icon-zigzag"></span>
+                                </div>
+                                <h4 class="card-title">Total Views</h4>
+                                <h3 class="card-statitics">308.402</h3>
+                            </div>
+                            <div class="bottom-part-card">
+                                <p class="card-details">Start from 1 Jan 2021</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="top-part-card">
+                                <div class="card-icons">
+                                    <span class="icon icon-eye"></span>
+                                    <span class="icon icon-zigzag"></span>
+                                </div>
+                                <h4 class="card-title">Total Views</h4>
+                                <h3 class="card-statitics">308.402</h3>
+                            </div>
+                            <div class="bottom-part-card">
+                                <p class="card-details">Start from 1 Jan 2021</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="top-part-card">
+                                <div class="card-icons">
+                                    <span class="icon icon-eye"></span>
+                                    <span class="icon icon-zigzag"></span>
+                                </div>
+                                <h4 class="card-title">Total Views</h4>
+                                <h3 class="card-statitics">308.402</h3>
+                            </div>
+                            <div class="bottom-part-card">
+                                <p class="card-details">Start from 1 Jan 2021</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="top-part-card">
+                                <div class="card-icons">
+                                    <span class="icon icon-eye"></span>
+                                    <span class="icon icon-zigzag"></span>
+                                </div>
+                                <h4 class="card-title">Total Views</h4>
+                                <h3 class="card-statitics">308.402</h3>
+                            </div>
+                            <div class="bottom-part-card">
+                                <p class="card-details">Start from 1 Jan 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section dashboard-statistics d-flex">
+                    <div class="product-details">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Product Name</th>
+                                    <th>status</th>
+                                    <th>Sold</th>
+                                    <th>View</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>New Mobile App...</td>
+                                    <td class="active-text">active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>40+ Landing Page...</td>
+                                    <td class="active-text">active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Doctor Consultant UI...</td>
+                                    <td class="active-text">active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Startup Illustration Kit</td>
+                                    <td class="active-text">active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="sales-chart" style="padding-left:5rem">
+                        <div class="sales-header d-flex">
+                            <h4 class="sales-heading">View & Sales</h4>
+                            <div class="d-flex">
+                                <h5 class="sales-week">This Week</h5>
+                                <span class="drop-down icon-drop-down"></span>
+                            </div>                           
+                        </div>
+                        <div class="sales-entity d-flex">
+                            <div class="total-views">
+                                <span class="square"></span>
+                                <span>Total Views</span>
+                            </div>
+                            <div class="total-sales">
+                                <span class="square"></span>
+                                <span>Total Sales</span>
+                            </div>
+                        </div>
+                        <div class="sales-bars d-flex">
+                            <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
+                                <div class="first-term" style="height: 20px; border: 1px solid;"></div>
+                                <div class="second-term" style="height: 60px; border: 1px solid;"></div>
+                            </div>
+                            <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
+                                <div class="first-term" style="height: 40px; border: 1px solid;"></div>
+                                <div class="second-term" style="height: 40px; border: 1px solid;"></div>
+                            </div>
+                            <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
+                                <div class="first-term" style="height: 10px; border: 1px solid;"></div>
+                                <div class="second-term" style="height: 70px; border: 1px solid;"></div>
+                            </div>
+                            <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
+                                <div class="first-term" style="height: 70px; border: 1px solid;"></div>
+                                <div class="second-term" style="height: 10px; border: 1px solid;"></div>
+                            </div>
+                            <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
+                                <div class="first-term" style="height: 30px; border: 1px solid;"></div>
+                                <div class="second-term" style="height: 50px; border: 1px solid;"></div>
+                            </div>
+                            <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
+                                <div class="first-term" style="height: 20px; border: 1px solid;"></div>
+                                <div class="second-term" style="height: 60px; border: 1px solid;"></div>
+                            </div>
+                            <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
+                                <div class="first-term" style="height: 10px; border: 1px solid;"></div>
+                                <div class="second-term" style="height: 70px; border: 1px solid;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+    </div>
+</body>
+
+</html>
