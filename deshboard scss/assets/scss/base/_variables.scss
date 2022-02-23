@@ -5,12 +5,23 @@ $font-size-base: 1rem;
 $font-family: 'Josefin Sans', sans-serif;
 $font-bold: 500;
 
+// icons
+$icon-size: 1.5rem;
+
+// header
+$padding-tb:0.7rem;
+$header-input-pt: $padding-tb;
+$header-input-pb: $padding-tb;
+$header-search-pt: $padding-tb;
+$header-search-pb: $padding-tb;
+
+// sidebar
+$side-icon-size: $icon-size;
+
 // header & sidebar height and width
 $flex-basis : 80px;
 
 
-// icons
-$icon-size: 1.7rem;
 
 
 

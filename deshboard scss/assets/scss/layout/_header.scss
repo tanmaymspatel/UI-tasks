@@ -4,9 +4,10 @@
 .top-nav {
     flex-basis: $flex-basis;
     background-color: $white;
+    padding: 0 1.7rem;
+    border-bottom: 1px solid $header-border-color;
 }
 .top-left-nav {
-    padding: 0 2rem;
     .logo {
         .icon {
             font-size: $icon-size;
@@ -14,12 +15,15 @@
         }
     }
     .top-search {
-        padding-left: 3rem;
+        margin-left: 4rem;
+        padding-left: 1rem;
+        background-color: $header-search-background;
+        
         #search {
-            padding: 0.7rem 0.8rem 0.7rem 2.5rem;
+            padding: $header-input-pt 0.8rem $header-input-pb 0.5rem;
             width: 350px;
             background-color: $header-search-background;
-            border-color: transparent;
+            border: none;
             font-size: $font-size-base;
             &::placeholder {
                 color: $header-search-text-color;
@@ -33,13 +37,12 @@
         }
     }
     .search-btn {
-        padding: 0.7rem 1rem;
+        padding: $header-search-pt 1rem $header-search-pb;
         background-color: $primary;
     }
 }
 
 .top-right-nav {
-    flex-basis: 150px;
     .notifications {
         .icon {
             font-size: $icon-size;
@@ -48,6 +51,7 @@
         }
     }
     .user-image {
+        padding-left: 1.5rem;
         .user-avatar {
             width: 30px;
             height: 30px;

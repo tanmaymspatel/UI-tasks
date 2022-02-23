@@ -3,6 +3,16 @@
 #sidebar{
     flex-basis: $flex-basis;
     background-color: $white;
+    .nav-item{
+        padding: 1rem 0;
+        margin: 1rem 0;
+    }
+    .nav-link{
+        .icon{
+            font-size: $side-icon-size;
+            color: $icon-color;
+        }
+    }
 }
 
 

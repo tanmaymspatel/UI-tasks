@@ -10,10 +10,11 @@
 html,
 body {
     height  : 100%;
-    overflow: hidden;
+    
 }
 
 body{
+    overflow: hidden;
     font-family: $font-family;
     font-size: $font-size-base;
 }
@@ -31,8 +32,8 @@ a{
     display: flex;
     flex-wrap: wrap;
 }
-.section{
-    padding: 3rem 0;
+.div-wrapper{
+    padding: 1rem 0;
 }
 .d-flex {
     display: flex;
@@ -49,7 +50,14 @@ a{
 .flex-grow-1 {
     flex-grow: 1;
 }
-
+.flex{
+    &-shrink-0 {
+        flex-shrink: 0;
+    }
+    &-shrink-1 {
+        flex-shrink: 1;
+    }
+}
 .align-items-center {
     align-items: center;
 }
@@ -60,6 +68,11 @@ a{
 
 .justify-content-between {
     justify-content: space-between;
+}
+
+.overflow-auto {
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 // flex styles ends

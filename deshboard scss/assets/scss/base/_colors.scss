@@ -1,6 +1,6 @@
 // Theme Colors
 $primary: #438ffe;
-$secondary: #160e4d;
+$secondary: #1a1350;
 $warning: #fe764b;
 $white: #ffffff;
 $success: #8bc38a;
@@ -18,6 +18,7 @@ $header-search-btn-color : $primary;
 $header-icon-color : $grey;
 $header-notification-color : $warning;
 $header-avatar-background: #83bcbd;
+$header-border-color: #bcc2cd;
 
 // sidebar
 $icon-color: $grey;
@@ -35,10 +36,10 @@ $main-title-color : $secondary;
   $card-border-color : $grey-text-color;
   $card-text-after-border: $grey-text-color;
   $card-add-product-text: $active;
-  // $card-view-icon: 
+  $card-views-icon: $active;
   $card-product-icon: $success;
   $card-user-icon: $primary;
-  $card-sells-icon : $info;
+  $card-sales-icon : $info;
   $card-line-orange:$warning;
   $card-line-green: $success;
 

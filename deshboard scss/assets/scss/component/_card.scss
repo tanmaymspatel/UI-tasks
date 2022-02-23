@@ -1,0 +1,71 @@
+/*card scss*/
+
+.card{
+    width: 25%;
+    padding: 0 1.5rem;
+    .card-inner {
+        background-color: $card-background;
+        padding: 1rem;
+    }
+    .card-icons {
+        display: flex;
+        justify-content: space-between;
+        .icon{
+            font-size: $icon-size;
+        }
+        .icon-eye{
+            color: $card-views-icon;
+        }
+        .icon-bag{
+            color: $card-product-icon;
+        }
+        .icon-users{
+            color: $card-user-icon;
+        }
+        .icon-cart{
+            color: $card-sales-icon;
+        }
+        .icon-warning{
+            color: $card-line-orange;
+        }
+        .icon-success{
+            color: $card-line-green;
+        }
+    }
+
+    // &.view-card{
+    //     .icon{
+    //         color: $card-views-icon;
+    //     }
+    //     .icon-zigzag{
+    //         color: $card-line-orange;
+    //     }
+    // }
+    // &.product-card{
+    //     .icon{
+    //         color: $card-product-icon;
+    //     }
+    //     .icon-zigzag{
+    //         color: $card-line-orange;
+    //     }
+    // }
+    // &.product-users{
+    //     .icon{
+    //         color: $card-user-icon;
+    //     }
+    //     .icon-zigzag{
+    //         color: $card-line-green;
+    //     }
+    // }
+    // &.product-sales{
+    //     .icon{
+    //         color: $card-sales-icon;
+    //     }
+    //     .icon-zigzag{
+    //         color: $card-line-green;
+    //     }
+    // }
+
+}
+
+// icon-colors

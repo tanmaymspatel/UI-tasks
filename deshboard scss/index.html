@@ -12,22 +12,23 @@
 
 <body>
     <div class="wrapper h-100 d-flex flex-column">
-        <header class="top-nav d-flex align-items-center">
-            <div class="top-left-nav d-flex flex-grow-1">
+        <header class="top-nav d-flex justify-content-between flex-shrink-0">
+            <div class="top-left-nav d-flex align-items-center">
                 <div class="logo">
                     <span class="icon icon-logo"></span>
                 </div>
                 <div class="search-bar d-flex">
                     <div class="top-search">
+                        <label for="search"><span class="icon-search"></span></label>
                         <input type="search" id="search" placeholder="Search for transection, items, etc">
-                        <span id="search-icon" class="icon-search"></span>
+
                     </div>
                     <div class="search-button">
                         <button class="btn search-btn">Search</button>
                     </div>
                 </div>
             </div>
-            <div class="top-right-nav d-flex">
+            <div class="top-right-nav d-flex align-items-center ">
                 <div class="notifications">
                     <span class="icon icon-message-outlined"></span>
                     <span class="icon icon-bell"></span>
@@ -41,77 +42,93 @@
             </div>
         </header>
         <div class="main d-flex flex-grow-1">
-            <aside id="sidebar" class="d-flex flex-column align-items-center">
-                <ul class="side-nav-1 flex-grow-1">
-                    <li><a href=""><span class="icon icon-dashboard"></span></a></li>
-                    <li><a href=""><span class="icon icon-cart"></span></a></li>
-                    <li><a href=""><span class="icon icon-notepad"></span></a></li>
-                    <li><a href=""><span class="icon icon-settings"></span></a></li>
+            <aside id="sidebar" class="d-flex flex-column align-items-center flex-shrink-0">
+                <ul class="side-nav-1 flex-grow-1 overflow-auto">
+                    <li class="nav-item"><a class="nav-link" href=""><span class="icon icon-dashboard"></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><span class="icon icon-cart"></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><span class="icon icon-notepad"></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><span class="icon icon-settings"></span></a></li>
                 </ul>
                 <ul class="side-nav-2">
-                    <li><a href=""><span class="icon icon-warning"></span></a></li>
-                    <li><a href=""><span class="icon icon-logout"></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><span class="icon icon-warning"></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><span class="icon icon-logout"></span></a></li>
                 </ul>
             </aside>
             <main class="main-content flex-grow-1">
                 <h2 class="heading-title">Dashboard</h2>
-                <section class="section analytics-section">
+                <div class="div-wrapper analytics-section">
                     <div class="row">
-                        <div class="card">
-                            <div class="top-part-card">
-                                <div class="card-icons">
-                                    <span class="icon icon-eye"></span>
-                                    <span class="icon icon-zigzag"></span>
+                        <div class="card view-card">
+                            <div class="card-inner">
+                                <div class="top-part-card">
+                                    <div class="card-icons">
+                                        <div class="icon-background">
+                                            <span class="icon icon-eye"></span>
+                                        </div>
+                                        <span class="icon icon-warning icon-zigzag"></span>
+                                    </div>
+                                    <h4 class="card-title">Total Views</h4>
+                                    <h3 class="card-statitics">308.402</h3>
                                 </div>
-                                <h4 class="card-title">Total Views</h4>
-                                <h3 class="card-statitics">308.402</h3>
-                            </div>
-                            <div class="bottom-part-card">
-                                <p class="card-details">Start from 1 Jan 2021</p>
+                                <div class="bottom-part-card">
+                                    <p class="card-details">Start from 1 Jan 2021</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="top-part-card">
-                                <div class="card-icons">
-                                    <span class="icon icon-eye"></span>
-                                    <span class="icon icon-zigzag"></span>
+                        <div class="card product-card">
+                            <div class="card-inner">
+                                <div class="top-part-card">
+                                    <div class="card-icons">
+                                        <div class="icon-background">
+                                            <span class="icon icon-bag"></span>
+                                        </div>
+                                        <span class="icon icon-warning icon-zigzag"></span>
+                                    </div>
+                                    <h4 class="card-title">Total Products</h4>
+                                    <h3 class="card-statitics">10.820</h3>
                                 </div>
-                                <h4 class="card-title">Total Views</h4>
-                                <h3 class="card-statitics">308.402</h3>
-                            </div>
-                            <div class="bottom-part-card">
-                                <p class="card-details">Start from 1 Jan 2021</p>
+                                <div class="bottom-part-card">
+                                    <p class="card-details">+ Add New Product</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="top-part-card">
-                                <div class="card-icons">
-                                    <span class="icon icon-eye"></span>
-                                    <span class="icon icon-zigzag"></span>
+                        <div class="card users-card">
+                            <div class="card-inner">
+                                <div class="top-part-card">
+                                    <div class="card-icons">
+                                        <div class="icon-background">
+                                            <span class="icon icon-users"></span>
+                                        </div>
+                                        <span class="icon icon-success icon-zigzag"></span>
+                                    </div>
+                                    <h4 class="card-title">Total Users</h4>
+                                    <h3 class="card-statitics">8.425</h3>
                                 </div>
-                                <h4 class="card-title">Total Views</h4>
-                                <h3 class="card-statitics">308.402</h3>
-                            </div>
-                            <div class="bottom-part-card">
-                                <p class="card-details">Start from 1 Jan 2021</p>
+                                <div class="bottom-part-card">
+                                    <p class="card-details">New User Noted Every Week</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="top-part-card">
-                                <div class="card-icons">
-                                    <span class="icon icon-eye"></span>
-                                    <span class="icon icon-zigzag"></span>
+                        <div class="card sales-card">
+                            <div class="card-inner">
+                                <div class="top-part-card">
+                                    <div class="card-icons">
+                                        <div class="icon-background">
+                                            <span class="icon icon-cart"></span>
+                                        </div>
+                                        <span class="icon icon-success icon-zigzag"></span>
+                                    </div>
+                                    <h4 class="card-title">Total Sales</h4>
+                                    <h3 class="card-statitics">1.028.623</h3>
                                 </div>
-                                <h4 class="card-title">Total Views</h4>
-                                <h3 class="card-statitics">308.402</h3>
-                            </div>
-                            <div class="bottom-part-card">
-                                <p class="card-details">Start from 1 Jan 2021</p>
+                                <div class="bottom-part-card">
+                                    <p class="card-details">Start from 1 Jan 2021</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="section dashboard-statistics d-flex">
+                </div>
+                <div class="div-wrapper dashboard-statistics d-flex">
                     <div class="product-details">
                         <table>
                             <thead>
@@ -161,7 +178,7 @@
                             <div class="d-flex">
                                 <h5 class="sales-week">This Week</h5>
                                 <span class="drop-down icon-drop-down"></span>
-                            </div>                           
+                            </div>
                         </div>
                         <div class="sales-entity d-flex">
                             <div class="total-views">
@@ -204,11 +221,11 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
             </main>
         </div>
 
     </div>
 </body>
 
-</html>
+</htm

@@ -2,7 +2,15 @@
 
 .main-content{
     background-color: $body-bg;
-    padding: 4rem;
+    padding: 2rem;
+    .heading-title{
+        color: $main-title-color;
+    }
+}
+
+/*analytics section*/
+.analytics-section {
+	margin: 0 -1.5rem;
 }
 
 
