@@ -179,9 +179,17 @@ a, button {
           justify-content: space-between;
 }
 
-.overflow-auto {
+.overflow-y {
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .position-relative {
@@ -231,25 +239,27 @@ a, button {
 
 .top-left-nav .top-search #search::-webkit-input-placeholder {
   color: #c1c5d0;
+  padding-left: 0.5rem;
 }
 
 .top-left-nav .top-search #search:-ms-input-placeholder {
   color: #c1c5d0;
+  padding-left: 0.5rem;
 }
 
 .top-left-nav .top-search #search::-ms-input-placeholder {
   color: #c1c5d0;
+  padding-left: 0.5rem;
 }
 
 .top-left-nav .top-search #search::placeholder {
   color: #c1c5d0;
+  padding-left: 0.5rem;
 }
 
-.top-left-nav .top-search #search-icon {
-  position: absolute;
-  top: 32px;
-  left: 120px;
+.top-left-nav .top-search .icon-search {
   color: #abb1bf;
+  cursor: pointer;
 }
 
 .top-left-nav .search-btn {
@@ -347,6 +357,7 @@ input#check {
 .card {
   width: 25%;
   padding: 0 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .card .card-inner {

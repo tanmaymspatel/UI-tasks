@@ -27,14 +27,14 @@
             font-size: $font-size-base;
             &::placeholder {
                 color: $header-search-text-color;
+                padding-left: 0.5rem;
             }
         }
-        #search-icon {
-            position: absolute;
-            top: 32px;
-            left: 120px;
-            color: $header-search-icon-color;
+        .icon-search{
+            color: $icon-color;
+            cursor: pointer;
         }
+
     }
     .search-btn {
         padding: $header-search-pt 1rem $header-search-pb;
