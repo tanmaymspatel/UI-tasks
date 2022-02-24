@@ -1,5 +1,5 @@
 // All the SCSS Variables goes here
-
+$transition : 0.5s all;
 // Fonts
 $font-size-base: 1rem;
 $font-family: 'Josefin Sans', sans-serif;
@@ -19,7 +19,12 @@ $header-search-pb: $padding-tb;
 $side-icon-size: $icon-size;
 
 // header & sidebar height and width
-$flex-basis : 80px;
+$flex-basis : 90px;
+
+
+// card
+
+$card-icon-size: 60px;
 
 
 

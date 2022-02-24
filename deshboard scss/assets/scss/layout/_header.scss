@@ -1,14 +1,14 @@
 // // Header area style
 
 /* top navigation */
-.top-nav {
+#header {
     flex-basis: $flex-basis;
     background-color: $white;
-    padding: 0 1.7rem;
+    padding: 0 2rem;
     border-bottom: 1px solid $header-border-color;
 }
 .top-left-nav {
-    .logo {
+    .brand-logo {
         .icon {
             font-size: $icon-size;
             color: $header-icon;

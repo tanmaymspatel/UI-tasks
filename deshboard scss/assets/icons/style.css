@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'app';
-  src:  url('fonts/app.eot?gvoq6y');
-  src:  url('fonts/app.eot?gvoq6y#iefix') format('embedded-opentype'),
-    url('fonts/app.ttf?gvoq6y') format('truetype'),
-    url('fonts/app.woff?gvoq6y') format('woff'),
-    url('fonts/app.svg?gvoq6y#app') format('svg');
+  src:  url('fonts/app.eot?ty2f9i');
+  src:  url('fonts/app.eot?ty2f9i#iefix') format('embedded-opentype'),
+    url('fonts/app.ttf?ty2f9i') format('truetype'),
+    url('fonts/app.woff?ty2f9i') format('woff'),
+    url('fonts/app.svg?ty2f9i#app') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -29,7 +29,7 @@
   content: "\e90a";
   color: #1271ff;
 }
-.icon-message-outlined:before {
+.icon-message:before {
   content: "\e900";
 }
 .icon-cart:before {
@@ -70,4 +70,7 @@
 }
 .icon-zigzag:before {
   content: "\e90b";
+}
+.icon-toggle:before {
+  content: "\e90f";
 }

@@ -1,6 +1,6 @@
 // Theme Colors
 $primary: #438ffe;
-$secondary: #1a1350;
+$secondary: #1b1351;
 $warning: #fe764b;
 $white: #ffffff;
 $success: #8bc38a;
@@ -43,13 +43,23 @@ $main-title-color : $secondary;
   $card-line-orange:$warning;
   $card-line-green: $success;
 
-  //card hover
-  $card-background-hover : $primary;
-  $card-icon-color-hover : $primary;
 
 // table
 $table-background: $white;
 $table-heading-color: $secondary;
+$table-data-text : $secondary;
+$table-data-background: #f5f7f9;
+$table-status-color: $active;
+
+// card icon color map
+$icon-colors: (
+  "views": $active,
+  "user": $primary,
+  "products": $success,
+  "sales": $info
+);
+
+
 
 
 //   // Body
@@ -83,10 +93,4 @@ $table-heading-color: $secondary;
 // $table-cell-border-color:#29314a;
 // $table-heading-color:#68707b;
 
-// $text-colors: (
-//   "primary": $primary,
-//   "warning": $warning,
-//   "success": $success,
-//   "danger": $danger,
-//   "info": $info
-// );
+

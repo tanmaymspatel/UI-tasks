@@ -23,7 +23,7 @@ body{
     height: 100%;
 }
 
-a{
+a, button{
     cursor: pointer;
 }
 
@@ -37,6 +37,10 @@ a{
 }
 .d-flex {
     display: flex;
+}
+
+.text-center{
+    text-align: center;
 }
 
 .flex-wrap {

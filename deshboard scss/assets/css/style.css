@@ -1,4 +1,88 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap");
+.icon-views {
+  color: #61a0fd;
+  background-color: rgba(97, 160, 253, 0.2);
+}
+
+.icon-user {
+  color: #438ffe;
+  background-color: rgba(67, 143, 254, 0.2);
+}
+
+.icon-products {
+  color: #8bc38a;
+  background-color: rgba(139, 195, 138, 0.2);
+}
+
+.icon-sales {
+  color: #83bcbd;
+  background-color: rgba(131, 188, 189, 0.2);
+}
+
+.card-views:hover .card-inner {
+  background-color: #61a0fd;
+}
+
+.card-views:hover .card-inner .icon:first-child {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-views:hover .card-inner .icon, .card-views:hover .card-inner .card-title, .card-views:hover .card-inner .card-statitics, .card-views:hover .card-inner .card-details {
+  color: #ffffff;
+}
+
+.card-views:hover .card-inner .top-part-card {
+  border-color: #ffffff;
+}
+
+.card-user:hover .card-inner {
+  background-color: #438ffe;
+}
+
+.card-user:hover .card-inner .icon:first-child {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-user:hover .card-inner .icon, .card-user:hover .card-inner .card-title, .card-user:hover .card-inner .card-statitics, .card-user:hover .card-inner .card-details {
+  color: #ffffff;
+}
+
+.card-user:hover .card-inner .top-part-card {
+  border-color: #ffffff;
+}
+
+.card-products:hover .card-inner {
+  background-color: #8bc38a;
+}
+
+.card-products:hover .card-inner .icon:first-child {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-products:hover .card-inner .icon, .card-products:hover .card-inner .card-title, .card-products:hover .card-inner .card-statitics, .card-products:hover .card-inner .card-details {
+  color: #ffffff;
+}
+
+.card-products:hover .card-inner .top-part-card {
+  border-color: #ffffff;
+}
+
+.card-sales:hover .card-inner {
+  background-color: #83bcbd;
+}
+
+.card-sales:hover .card-inner .icon:first-child {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-sales:hover .card-inner .icon, .card-sales:hover .card-inner .card-title, .card-sales:hover .card-inner .card-statitics, .card-sales:hover .card-inner .card-details {
+  color: #ffffff;
+}
+
+.card-sales:hover .card-inner .top-part-card {
+  border-color: #ffffff;
+}
+
 *,
 ::after,
 ::before {
@@ -23,7 +107,7 @@ body {
   height: 100%;
 }
 
-a {
+a, button {
   cursor: pointer;
 }
 
@@ -43,6 +127,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .flex-wrap {
@@ -114,15 +202,15 @@ a {
 }
 
 /* top navigation */
-.top-nav {
-  -ms-flex-preferred-size: 80px;
-      flex-basis: 80px;
+#header {
+  -ms-flex-preferred-size: 90px;
+      flex-basis: 90px;
   background-color: #ffffff;
-  padding: 0 1.7rem;
+  padding: 0 2rem;
   border-bottom: 1px solid #bcc2cd;
 }
 
-.top-left-nav .logo .icon {
+.top-left-nav .brand-logo .icon {
   font-size: 1.5rem;
   color: #438ffe;
 }
@@ -189,8 +277,8 @@ a {
   padding: 2rem;
 }
 
-.main-content .heading-title {
-  color: #1a1350;
+.main-content .title {
+  color: #1b1351;
 }
 
 /*analytics section*/
@@ -198,10 +286,16 @@ a {
   margin: 0 -1.5rem;
 }
 
+input#check {
+  display: none;
+}
+
 #sidebar {
-  -ms-flex-preferred-size: 80px;
-      flex-basis: 80px;
+  -ms-flex-preferred-size: 90px;
+      flex-basis: 90px;
   background-color: #ffffff;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 
 #sidebar .nav-item {
@@ -214,9 +308,39 @@ a {
   color: #abb1bf;
 }
 
+.sidebar-toggle {
+  position: relative;
+}
+
+.icon-toggle {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 2rem;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #438ffe;
+  cursor: pointer;
+}
+
+#check:checked ~ #sidebar {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+}
+
+#check:checked ~ .sidebar-toggle .icon-toggle {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .btn {
   border-color: transparent;
   color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 /*card scss*/
@@ -227,7 +351,9 @@ a {
 
 .card .card-inner {
   background-color: #ffffff;
-  padding: 1rem;
+  padding: 1.5rem;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 
 .card .card-icons {
@@ -237,26 +363,22 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 1.25rem;
 }
 
 .card .card-icons .icon {
   font-size: 1.5rem;
-}
-
-.card .card-icons .icon-eye {
-  color: #61a0fd;
-}
-
-.card .card-icons .icon-bag {
-  color: #8bc38a;
-}
-
-.card .card-icons .icon-users {
-  color: #438ffe;
-}
-
-.card .card-icons .icon-cart {
-  color: #83bcbd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card .card-icons .icon-warning {
@@ -265,6 +387,64 @@ a {
 
 .card .card-icons .icon-success {
   color: #8bc38a;
+}
+
+.card .top-part-card {
+  border-bottom: 1px solid #c1c5d0;
+}
+
+.card .top-part-card .card-title {
+  font-size: 1rem;
+  padding-bottom: 1.25rem;
+  color: #c1c5d0;
+  font-weight: 400;
+}
+
+.card .top-part-card .card-statitics {
+  font-size: 1.5rem;
+  padding-bottom: 1.75rem;
+  color: #1b1351;
+}
+
+.card .card-details {
+  padding-top: 1.25rem;
+  color: #c1c5d0;
+}
+
+.card .card-details.active {
+  color: #61a0fd;
+}
+
+input {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.data-table {
+  width: 100%;
+  text-align: left;
+  background: white;
+  padding: 0 1.5rem;
+  padding: 0 1.5rem;
+  border-spacing: 0 1rem;
+}
+
+.data-table th {
+  padding: 1rem 0 1rem 1.5rem;
+  color: #1b1351;
+}
+
+.data-table td {
+  background-color: #f5f7f9;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  font-size: 0.875rem;
+}
+
+.data-table td img {
+  height: 50px;
 }
 
 .text-decoration-none {

@@ -1,1 +1,7 @@
 // Form controls styles goes here
+input{
+    font-family: $font-family;
+    &:focus-visible{
+        outline: none;
+    }
+}

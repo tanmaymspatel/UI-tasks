@@ -1,20 +1,46 @@
 // // Styles for Sidebar lies here
+input#check {
+    display: none;
+}
 
-#sidebar{
+#sidebar {
     flex-basis: $flex-basis;
     background-color: $white;
-    .nav-item{
+    transition: $transition;
+    .nav-item {
         padding: 1rem 0;
         margin: 1rem 0;
     }
-    .nav-link{
-        .icon{
+    .nav-link {
+        .icon {
             font-size: $side-icon-size;
             color: $icon-color;
         }
     }
 }
+.sidebar-toggle {
+    position: relative;
+}
+.icon-toggle {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    transition: $transition;
+    color: $primary;
+    cursor: pointer;
+}
 
+#check:checked {
+    & ~ #sidebar {
+        transform: translateX(-100%);
+        flex-basis: 0;
+    }
+    & ~ .sidebar-toggle .icon-toggle {
+        transform: rotate(180deg);
+    }
+}
 
 // // Primary Nav
 // #primaryNav {
@@ -48,4 +74,3 @@
 //         }
 //     }
 // }
-

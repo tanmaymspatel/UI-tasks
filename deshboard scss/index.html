@@ -11,60 +11,82 @@
 </head>
 
 <body>
-    <div class="wrapper h-100 d-flex flex-column">
-        <header class="top-nav d-flex justify-content-between flex-shrink-0">
+    <div class="h-100 d-flex flex-column">
+        <!-- Start : Header -->
+        <header id="header" class="d-flex justify-content-between flex-shrink-0">
+            <!-- Start : Header Left -->
             <div class="top-left-nav d-flex align-items-center">
-                <div class="logo">
+                <div class="brand-logo">
                     <span class="icon icon-logo"></span>
                 </div>
                 <div class="search-bar d-flex">
                     <div class="top-search">
                         <label for="search"><span class="icon-search"></span></label>
                         <input type="search" id="search" placeholder="Search for transection, items, etc">
-
                     </div>
                     <div class="search-button">
                         <button class="btn search-btn">Search</button>
                     </div>
                 </div>
             </div>
+            <!-- End : Header Left -->
+            <!-- Start : Header Right -->
             <div class="top-right-nav d-flex align-items-center ">
                 <div class="notifications">
-                    <span class="icon icon-message-outlined"></span>
-                    <span class="icon icon-bell"></span>
+                    <a href=""> <span class="icon icon-message"></span></a>
+                    <a href=""> <span class="icon icon-bell"></span></a>
                 </div>
                 <div class="user-image">
-                    <figure>
-                        <img class="user-avatar" src="./assets/images/user-avatar.svg" alt="User Image">
-                    </figure>
+                    <a href="">
+                        <figure>
+                            <img class="user-avatar" src="./assets/images/user-avatar.svg" alt="User Image">
+                        </figure>
+                    </a>
                 </div>
-                <span class="drop-down icon-drop-down"></span>
+                <a class="drop-down" href=""><span class="icon-drop-down"></span></a>
             </div>
+            <!-- End : Header Right -->
         </header>
-        <div class="main d-flex flex-grow-1">
-            <aside id="sidebar" class="d-flex flex-column align-items-center flex-shrink-0">
-                <ul class="side-nav-1 flex-grow-1 overflow-auto">
-                    <li class="nav-item"><a class="nav-link" href=""><span class="icon icon-dashboard"></span></a></li>
-                    <li class="nav-item"><a class="nav-link" href=""><span class="icon icon-cart"></span></a></li>
-                    <li class="nav-item"><a class="nav-link" href=""><span class="icon icon-notepad"></span></a></li>
-                    <li class="nav-item"><a class="nav-link" href=""><span class="icon icon-settings"></span></a></li>
+        <!-- End : Header -->
+        <!-- Start : Main -->
+        <div class="d-flex flex-grow-1">
+            <!-- Start : toggle check box -->
+            <input type="checkbox" id="check">
+            <!-- End : toggle check box -->
+            <!-- Start : Sidebar -->
+            <aside id="sidebar" class="d-flex flex-column flex-shrink-0">
+                <ul class="nav-options flex-grow-1 overflow-auto">
+                    <li class="nav-item text-center"><a class="nav-link" href=""><span
+                                class="icon icon-dashboard"></span></a></li>
+                    <li class="nav-item text-center"><a class="nav-link" href=""><span
+                                class="icon icon-cart"></span></a></li>
+                    <li class="nav-item text-center"><a class="nav-link" href=""><span
+                                class="icon icon-notepad"></span></a></li>
+                    <li class="nav-item text-center"><a class="nav-link" href=""><span
+                                class="icon icon-settings"></span></a></li>
                 </ul>
-                <ul class="side-nav-2">
-                    <li class="nav-item"><a class="nav-link" href=""><span class="icon icon-warning"></span></a></li>
-                    <li class="nav-item"><a class="nav-link" href=""><span class="icon icon-logout"></span></a></li>
+                <ul class="nav-actions">
+                    <li class="nav-item text-center"><a class="nav-link" href=""><span
+                                class="icon icon-warning"></span></a></li>
+                    <li class="nav-item text-center"><a class="nav-link" href=""><span
+                                class="icon icon-logout"></span></a></li>
                 </ul>
             </aside>
+            <label class="sidebar-toggle" for="check"><span class="icon-toggle"></span></label>
+            <!-- End : Sidebar -->
+            <!-- Start : Main Body -->
             <main class="main-content flex-grow-1">
-                <h2 class="heading-title">Dashboard</h2>
+                <h2 class="title">Dashboard</h2>
+                <!-- Start : Card Row -->
                 <div class="div-wrapper analytics-section">
                     <div class="row">
-                        <div class="card view-card">
+                        <div class="card card-views">
                             <div class="card-inner">
                                 <div class="top-part-card">
                                     <div class="card-icons">
-                                        <div class="icon-background">
-                                            <span class="icon icon-eye"></span>
-                                        </div>
+
+                                        <span class="icon icon-eye icon-views"></span>
+
                                         <span class="icon icon-warning icon-zigzag"></span>
                                     </div>
                                     <h4 class="card-title">Total Views</h4>
@@ -75,30 +97,30 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card product-card">
+                        <div class="card card-products">
                             <div class="card-inner">
                                 <div class="top-part-card">
                                     <div class="card-icons">
-                                        <div class="icon-background">
-                                            <span class="icon icon-bag"></span>
-                                        </div>
+
+                                        <span class="icon icon-bag icon-products"></span>
+
                                         <span class="icon icon-warning icon-zigzag"></span>
                                     </div>
                                     <h4 class="card-title">Total Products</h4>
                                     <h3 class="card-statitics">10.820</h3>
                                 </div>
                                 <div class="bottom-part-card">
-                                    <p class="card-details">+ Add New Product</p>
+                                    <p class="card-details active">+ Add New Product</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="card users-card">
+                        <div class="card card-user">
                             <div class="card-inner">
                                 <div class="top-part-card">
                                     <div class="card-icons">
-                                        <div class="icon-background">
-                                            <span class="icon icon-users"></span>
-                                        </div>
+
+                                        <span class="icon icon-users icon-user"></span>
+
                                         <span class="icon icon-success icon-zigzag"></span>
                                     </div>
                                     <h4 class="card-title">Total Users</h4>
@@ -109,13 +131,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card sales-card">
+                        <div class="card card-sales">
                             <div class="card-inner">
                                 <div class="top-part-card">
                                     <div class="card-icons">
-                                        <div class="icon-background">
-                                            <span class="icon icon-cart"></span>
-                                        </div>
+
+                                        <span class="icon icon-cart icon-sales"></span>
+
                                         <span class="icon icon-success icon-zigzag"></span>
                                     </div>
                                     <h4 class="card-title">Total Sales</h4>
@@ -128,12 +150,16 @@
                         </div>
                     </div>
                 </div>
+                <!-- End : Card Row -->
+                <!-- Start : Dashboard Details -->
                 <div class="div-wrapper dashboard-statistics d-flex">
-                    <div class="product-details">
-                        <table>
+                    <!-- Start : Product Table -->
+                    <div class="flex-grow-1">
+                        <table class="data-table product-details">
                             <thead>
                                 <tr>
                                     <th>No</th>
+                                    <th></th>
                                     <th>Product Name</th>
                                     <th>status</th>
                                     <th>Sold</th>
@@ -143,6 +169,8 @@
                             <tbody>
                                 <tr>
                                     <td>1</td>
+                                    <td><img height="20px" src="./assets/images/user-avatar.svg" alt="Mobile Image">
+                                    </td>
                                     <td>New Mobile App...</td>
                                     <td class="active-text">active</td>
                                     <td>10</td>
@@ -150,6 +178,8 @@
                                 </tr>
                                 <tr>
                                     <td>2</td>
+                                    <td><img height="20px" src="./assets/images/user-avatar.svg"
+                                            alt="Landing Page Image"></td>
                                     <td>40+ Landing Page...</td>
                                     <td class="active-text">active</td>
                                     <td>10</td>
@@ -157,6 +187,8 @@
                                 </tr>
                                 <tr>
                                     <td>3</td>
+                                    <td><img height="20px" src="./assets/images/user-avatar.svg"
+                                            alt="Doctor Consultant Image"></td>
                                     <td>Doctor Consultant UI...</td>
                                     <td class="active-text">active</td>
                                     <td>10</td>
@@ -164,6 +196,8 @@
                                 </tr>
                                 <tr>
                                     <td>4</td>
+                                    <td><img height="20px" src="./assets/images/user-avatar.svg" alt="Startup Image">
+                                    </td>
                                     <td>Startup Illustration Kit</td>
                                     <td class="active-text">active</td>
                                     <td>10</td>
@@ -172,7 +206,9 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="sales-chart" style="padding-left:5rem">
+                    <!-- End : Product Table -->
+                    <!-- Start : Analysis Chart  -->
+                    <div class="sales-chart" style="width: 35%;">
                         <div class="sales-header d-flex">
                             <h4 class="sales-heading">View & Sales</h4>
                             <div class="d-flex">
@@ -221,9 +257,13 @@
                             </div>
                         </div>
                     </div>
+                    <!-- End : Analysis Chart  -->
                 </div>
+                <!-- End : Dashboard Details -->
             </main>
+            <!-- End : Main Body -->
         </div>
+        <!-- End : Main -->
 
     </div>
 </body>

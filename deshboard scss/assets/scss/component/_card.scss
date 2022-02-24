@@ -1,71 +1,85 @@
 /*card scss*/
 
-.card{
+.card {
     width: 25%;
     padding: 0 1.5rem;
     .card-inner {
         background-color: $card-background;
-        padding: 1rem;
+        padding: 1.5rem;
+        transition: $transition;
     }
     .card-icons {
         display: flex;
         justify-content: space-between;
-        .icon{
+        padding-bottom: 1.25rem;
+        .icon {
             font-size: $icon-size;
+            display: flex;
+            height: $card-icon-size;
+            width: $card-icon-size;
+            align-items: center;
+            justify-content: center;
         }
-        .icon-eye{
-            color: $card-views-icon;
-        }
-        .icon-bag{
-            color: $card-product-icon;
-        }
-        .icon-users{
-            color: $card-user-icon;
-        }
-        .icon-cart{
-            color: $card-sales-icon;
-        }
-        .icon-warning{
+        .icon-warning {
             color: $card-line-orange;
         }
-        .icon-success{
+        .icon-success {
             color: $card-line-green;
         }
     }
-
-    // &.view-card{
-    //     .icon{
-    //         color: $card-views-icon;
-    //     }
-    //     .icon-zigzag{
-    //         color: $card-line-orange;
-    //     }
-    // }
-    // &.product-card{
-    //     .icon{
-    //         color: $card-product-icon;
-    //     }
-    //     .icon-zigzag{
-    //         color: $card-line-orange;
-    //     }
-    // }
-    // &.product-users{
-    //     .icon{
-    //         color: $card-user-icon;
-    //     }
-    //     .icon-zigzag{
-    //         color: $card-line-green;
-    //     }
-    // }
-    // &.product-sales{
-    //     .icon{
-    //         color: $card-sales-icon;
-    //     }
-    //     .icon-zigzag{
-    //         color: $card-line-green;
-    //     }
-    // }
-
+    .top-part-card {
+        border-bottom: 1px solid $grey-text-color;
+        .card-title {
+            font-size: 1rem;
+            padding-bottom: 1.25rem;
+            color: $grey-text-color;
+            font-weight: 400;
+        }
+        .card-statitics {
+            font-size: 1.5rem;
+            padding-bottom: 1.75rem;
+            color: $secondary;
+        }
+    }
+    .card-details {
+        padding-top: 1.25rem;
+        color: $grey-text-color;
+        &.active{
+            color: $active;
+        }
+    }
 }
+// &.view-card{
+//     .icon{
+//         color: $card-views-icon;
+//     }
+//     .icon-zigzag{
+//         color: $card-line-orange;
+//     }
+// }
+// &.product-card{
+//     .icon{
+//         color: $card-product-icon;
+//     }
+//     .icon-zigzag{
+//         color: $card-line-orange;
+//     }
+// }
+// &.product-users{
+//     .icon{
+//         color: $card-user-icon;
+//     }
+//     .icon-zigzag{
+//         color: $card-line-green;
+//     }
+// }
+// &.product-sales{
+//     .icon{
+//         color: $card-sales-icon;
+//     }
+//     .icon-zigzag{
+//         color: $card-line-green;
+//     }
+// }
 
 // icon-colors
