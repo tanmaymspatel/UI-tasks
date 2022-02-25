@@ -5,3 +5,30 @@ input{
         outline: none;
     }
 }
+
+// search 
+
+.top-search {
+    margin-left: 4rem;
+    padding-left: 1rem;
+    background-color: $header-search-background;
+
+    #search {
+        padding: $header-input-pt 0.8rem $header-input-pb 0.5rem;
+        width: 350px;
+        background-color: $header-search-background;
+        border: none;
+        font-size: $font-size-base;
+        &::placeholder {
+            color: $header-search-text-color;
+            padding-left: 0.5rem;
+        }
+        @include screen-size(md){
+            width: 150px;
+        }
+    }
+    .icon-search {
+        color: $icon-color;
+        cursor: pointer;
+    }
+}

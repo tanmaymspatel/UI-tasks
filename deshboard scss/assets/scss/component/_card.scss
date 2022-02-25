@@ -4,6 +4,17 @@
     width: 25%;
     padding: 0 1.5rem;
     margin: 1.5rem 0;
+
+    // tablet responsive
+    @include screen-size(md){
+        width: 50%;
+    }
+    // mobile responsive
+    @include screen-size(sm){
+        width: 100%;
+    }
+
+
     .card-inner {
         background-color: $card-background;
         padding: 1.5rem;
@@ -20,6 +31,10 @@
             width: $card-icon-size;
             align-items: center;
             justify-content: center;
+            &:last-child{
+                font-size: 5rem;
+                padding-right: 5rem;
+            }
         }
         .icon-warning {
             color: $card-line-orange;
@@ -45,6 +60,7 @@
     .card-details {
         padding-top: 1.25rem;
         color: $grey-text-color;
+        font-size: 0.9em;
         &.active{
             color: $active;
         }

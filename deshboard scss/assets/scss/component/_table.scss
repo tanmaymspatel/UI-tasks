@@ -3,29 +3,49 @@
 .data-table {
     width: 100%;
     text-align: left;
-    background: white;
-    padding: 0 1.5rem;
-    padding: 0 1.5rem;
-    border-spacing: 0 1rem;
+    background: $white;
+    border-collapse: collapse;
+    // padding: 0 1.5rem;
+    // border-spacing: 0 1rem;
     th {
-        padding: 1rem 0 1rem 1.5rem;
+        padding: 2rem 0 2rem 1.5rem;
         color: $secondary;
+        font-size: 1.25rem;
+        &:not(:nth-child(2)),
+        &:not(:first-child) {
+            width: 20%;
+        }
+        &:nth-child(2),
+        &:first-child {
+            width: 10%;
+        }
     }
     td {
-        background-color: #f5f7f9;
+        background-color: $header-search-background;
         padding: 0.75rem 0 0.75rem 1.5rem;
-        font-size: 0.875rem;
-        img{
+        &:not(:nth-child(2)),
+        &:not(:first-child) {
+            width: 20%;
+        }
+        &:nth-child(2),
+        &:first-child {
+            width: 10%;
+        }
+        img {
             height: 50px;
+        }
+    }
+    tbody{
+        tr{
+            border-bottom: 10px solid $white;
         }
     }
 }
 
-
-
-
-
-
+.product-table{
+    padding: 0 1.5rem;
+    background: $white;
+}
 // .table-layout-fixed {
 //     table-layout: fixed;
 // }

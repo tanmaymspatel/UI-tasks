@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'app';
-  src:  url('fonts/app.eot?ty2f9i');
-  src:  url('fonts/app.eot?ty2f9i#iefix') format('embedded-opentype'),
-    url('fonts/app.ttf?ty2f9i') format('truetype'),
-    url('fonts/app.woff?ty2f9i') format('woff'),
-    url('fonts/app.svg?ty2f9i#app') format('svg');
+  src:  url('fonts/app.eot?gr1ql1');
+  src:  url('fonts/app.eot?gr1ql1#iefix') format('embedded-opentype'),
+    url('fonts/app.ttf?gr1ql1') format('truetype'),
+    url('fonts/app.woff?gr1ql1') format('woff'),
+    url('fonts/app.svg?gr1ql1#app') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -59,17 +59,20 @@
 .icon-bell:before {
   content: "\e909";
 }
-.icon-drop-down:before {
-  content: "\e90e";
-}
-.icon-search:before {
-  content: "\e90c";
+.icon-mobile-menu:before {
+  content: "\e910";
 }
 .icon-logo:before {
   content: "\e90d";
 }
 .icon-zigzag:before {
   content: "\e90b";
+}
+.icon-drop-down:before {
+  content: "\e90e";
+}
+.icon-search:before {
+  content: "\e90c";
 }
 .icon-toggle:before {
   content: "\e90f";

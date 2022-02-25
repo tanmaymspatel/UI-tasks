@@ -14,40 +14,39 @@
             color: $header-icon;
         }
     }
-    .top-search {
-        margin-left: 4rem;
-        padding-left: 1rem;
-        background-color: $header-search-background;
-        
-        #search {
-            padding: $header-input-pt 0.8rem $header-input-pb 0.5rem;
-            width: 350px;
-            background-color: $header-search-background;
-            border: none;
-            font-size: $font-size-base;
-            &::placeholder {
-                color: $header-search-text-color;
-                padding-left: 0.5rem;
-            }
-        }
-        .icon-search{
-            color: $icon-color;
-            cursor: pointer;
-        }
 
+    .search-bar{
+        @include screen-size(sm){
+            display: none;
+        }
+        .search-btn {
+            padding: $header-search-pt 1rem $header-search-pb;
+            background-color: $primary;
+        }
     }
-    .search-btn {
-        padding: $header-search-pt 1rem $header-search-pb;
-        background-color: $primary;
-    }
+    
+    
 }
 
 .top-right-nav {
+    @include screen-size(sm){
+        display: none;
+    }
     .notifications {
         .icon {
             font-size: $icon-size;
             color: $header-icon-color;
             padding: 0.4rem;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                height: 7px;
+                width: 7px;
+                right: 1px;
+                background-color: $warning;
+                border-radius: 50%;
+            }
         }
     }
     .user-image {
@@ -56,6 +55,16 @@
             width: 30px;
             height: 30px;
         }
+    }
+}
+.mobile-menu{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    display:none;
+    @include screen-size(sm){
+        display: block;
     }
 }
 

@@ -46,6 +46,9 @@
                 <a class="drop-down" href=""><span class="icon-drop-down"></span></a>
             </div>
             <!-- End : Header Right -->
+            <div class="mobile-menu">
+                <span class="icon icon-mobile-menu"></span>
+            </div>
         </header>
         <!-- End : Header -->
         <!-- Start : Main -->
@@ -75,7 +78,7 @@
             <label class="sidebar-toggle" for="check"><span class="icon-toggle"></span></label>
             <!-- End : Sidebar -->
             <!-- Start : Main Body -->
-            <main class="main-content flex-grow-1">
+            <main class="main-content flex-grow-1 overflow-y">
                 <h2 class="title">Dashboard</h2>
                 <!-- Start : Card Row -->
                 <div class="div-wrapper analytics-section">
@@ -110,7 +113,8 @@
                                     <h3 class="card-statitics">10.820</h3>
                                 </div>
                                 <div class="bottom-part-card">
-                                    <p class="card-details active"><a href="" class="card-details active">+ Add New Product</a></p>
+                                    <p class="card-details active"><a href="" class="card-details active">+ Add New
+                                            Product</a></p>
                                 </div>
                             </div>
                         </div>
@@ -153,111 +157,140 @@
                 <!-- End : Card Row -->
                 <!-- Start : Dashboard Details -->
                 <div class="div-wrapper dashboard-statistics d-flex">
-                    <!-- Start : Product Table -->
-                    <div class="flex-grow-1">
-                        <table class="data-table product-details">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th></th>
-                                    <th>Product Name</th>
-                                    <th>status</th>
-                                    <th>Sold</th>
-                                    <th>View</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td><img height="20px" src="./assets/images/user-avatar.svg" alt="Mobile Image">
-                                    </td>
-                                    <td>New Mobile App...</td>
-                                    <td class="active-text">active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td><img height="20px" src="./assets/images/user-avatar.svg"
-                                            alt="Landing Page Image"></td>
-                                    <td>40+ Landing Page...</td>
-                                    <td class="active-text">active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td><img height="20px" src="./assets/images/user-avatar.svg"
-                                            alt="Doctor Consultant Image"></td>
-                                    <td>Doctor Consultant UI...</td>
-                                    <td class="active-text">active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td><img height="20px" src="./assets/images/user-avatar.svg" alt="Startup Image">
-                                    </td>
-                                    <td>Startup Illustration Kit</td>
-                                    <td class="active-text">active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <!-- End : Product Table -->
-                    <!-- Start : Analysis Chart  -->
-                    <div class="sales-chart" style="width: 35%;">
-                        <div class="sales-header d-flex">
-                            <h4 class="sales-heading">View & Sales</h4>
-                            <div class="d-flex">
-                                <h5 class="sales-week">This Week</h5>
-                                <span class="drop-down icon-drop-down"></span>
+                        <!-- Start : Product Table -->
+                        <div class="product-table">
+                            <div>
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th></th>
+                                            <th>Product Name</th>
+                                            <th>Status</th>
+                                            <th>Sold</th>
+                                            <th>View</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="overflow-auto h-100">
+                                <table class="data-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><img height="20px" src="./assets/images/product-image.svg"
+                                                    alt="Mobile Image">
+                                            </td>
+                                            <td>New Mobile App...</td>
+                                            <td class="active-text">Active</td>
+                                            <td>10</td>
+                                            <td>320</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><img height="20px" src="./assets/images/product-image.svg"
+                                                    alt="Landing Page Image"></td>
+                                            <td>40+ Landing Page...</td>
+                                            <td class="active-text">Active</td>
+                                            <td>10</td>
+                                            <td>320</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td><img height="20px" src="./assets/images/product-image.svg"
+                                                    alt="Doctor Consultant Image"></td>
+                                            <td>Doctor Consultant UI...</td>
+                                            <td class="active-text">Active</td>
+                                            <td>10</td>
+                                            <td>320</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td><img height="20px" src="./assets/images/product-image.svg"
+                                                    alt="Startup Image">
+                                            </td>
+                                            <td>Startup Illustration Kit</td>
+                                            <td class="active-text">Active</td>
+                                            <td>10</td>
+                                            <td>320</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td><img height="20px" src="./assets/images/product-image.svg"
+                                                    alt="Startup Image">
+                                            </td>
+                                            <td>Startup Illustration Kit</td>
+                                            <td class="active-text">Active</td>
+                                            <td>10</td>
+                                            <td>320</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td><img height="20px" src="./assets/images/product-image.svg"
+                                                    alt="Startup Image">
+                                            </td>
+                                            <td>Startup Illustration Kit</td>
+                                            <td class="active-text">Active</td>
+                                            <td>10</td>
+                                            <td>320</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                        <div class="sales-entity d-flex">
-                            <div class="total-views">
-                                <span class="square"></span>
-                                <span>Total Views</span>
+                        <!-- End : Product Table -->
+                        <!-- Start : Analysis Chart  -->
+                        <div class="sales-chart">
+                            <div class="sales-header d-flex">
+                                <h4 class="sales-heading">View & Sales</h4>
+                                <div class="d-flex">
+                                    <h5 class="sales-week">This Week</h5>
+                                    <span class="drop-down icon-drop-down"></span>
+                                </div>
                             </div>
-                            <div class="total-sales">
-                                <span class="square"></span>
-                                <span>Total Sales</span>
+                            <div class="sales-entity d-flex">
+                                <div class="total-views">
+                                    <span class="square"></span>
+                                    <span>Total Views</span>
+                                </div>
+                                <div class="total-sales">
+                                    <span class="square"></span>
+                                    <span>Total Sales</span>
+                                </div>
+                            </div>
+                            <div class="sales-bars d-flex">
+                                <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
+                                    <div class="first-term" style="height: 20px; border: 1px solid;"></div>
+                                    <div class="second-term" style="height: 60px; border: 1px solid;"></div>
+                                </div>
+                                <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
+                                    <div class="first-term" style="height: 40px; border: 1px solid;"></div>
+                                    <div class="second-term" style="height: 40px; border: 1px solid;"></div>
+                                </div>
+                                <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
+                                    <div class="first-term" style="height: 10px; border: 1px solid;"></div>
+                                    <div class="second-term" style="height: 70px; border: 1px solid;"></div>
+                                </div>
+                                <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
+                                    <div class="first-term" style="height: 70px; border: 1px solid;"></div>
+                                    <div class="second-term" style="height: 10px; border: 1px solid;"></div>
+                                </div>
+                                <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
+                                    <div class="first-term" style="height: 30px; border: 1px solid;"></div>
+                                    <div class="second-term" style="height: 50px; border: 1px solid;"></div>
+                                </div>
+                                <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
+                                    <div class="first-term" style="height: 20px; border: 1px solid;"></div>
+                                    <div class="second-term" style="height: 60px; border: 1px solid;"></div>
+                                </div>
+                                <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
+                                    <div class="first-term" style="height: 10px; border: 1px solid;"></div>
+                                    <div class="second-term" style="height: 70px; border: 1px solid;"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="sales-bars d-flex">
-                            <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
-                                <div class="first-term" style="height: 20px; border: 1px solid;"></div>
-                                <div class="second-term" style="height: 60px; border: 1px solid;"></div>
-                            </div>
-                            <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
-                                <div class="first-term" style="height: 40px; border: 1px solid;"></div>
-                                <div class="second-term" style="height: 40px; border: 1px solid;"></div>
-                            </div>
-                            <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
-                                <div class="first-term" style="height: 10px; border: 1px solid;"></div>
-                                <div class="second-term" style="height: 70px; border: 1px solid;"></div>
-                            </div>
-                            <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
-                                <div class="first-term" style="height: 70px; border: 1px solid;"></div>
-                                <div class="second-term" style="height: 10px; border: 1px solid;"></div>
-                            </div>
-                            <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
-                                <div class="first-term" style="height: 30px; border: 1px solid;"></div>
-                                <div class="second-term" style="height: 50px; border: 1px solid;"></div>
-                            </div>
-                            <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
-                                <div class="first-term" style="height: 20px; border: 1px solid;"></div>
-                                <div class="second-term" style="height: 60px; border: 1px solid;"></div>
-                            </div>
-                            <div class="bar-wrapper" style="width: 10px; margin-right: 10px;">
-                                <div class="first-term" style="height: 10px; border: 1px solid;"></div>
-                                <div class="second-term" style="height: 70px; border: 1px solid;"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End : Analysis Chart  -->
+                        <!-- End : Analysis Chart  -->
+
                 </div>
                 <!-- End : Dashboard Details -->
             </main>

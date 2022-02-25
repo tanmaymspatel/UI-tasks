@@ -1,19 +1,52 @@
-// main body 
+// main body
 
-.main-content{
+.main-content {
     background-color: $body-bg;
     padding: 2rem;
-    .title{
+    .title {
         color: $main-title-color;
     }
 }
 
-/*analytics section*/
+/**/
 .analytics-section {
-	margin: 0 -1.5rem;
+    margin: 0 -1.5rem;
 }
 
+// table and graph 
+.dashboard-statistics {
+    height: 350px;
+    margin: 0 -1.5rem;
 
+    //  tablet responsive
+    @include screen-size(md){
+    //    height: auto;
+       flex-direction: column;
+       margin: 0;
+    }
+    .product-table,
+    .sales-chart {
+        margin: 0 1.5rem;
+        @include screen-size(md){
+            margin: 0 0 2rem 0;
+         }
+        
+    }
+    .product-table{
+        width: 65%;
+        @include screen-size(md){
+            width: 100%;
+        }
+    }
+    .sales-chart {
+        width: 35%;
+        background-color: $white;
+        padding: 1.5rem;
+        @include screen-size(md){
+            width: 100%;
+        }
+    }
+}
 
 // .content {
 //     &-wrapper {
