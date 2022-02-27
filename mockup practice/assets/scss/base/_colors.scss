@@ -1,0 +1,16 @@
+// theme colors
+$primary: #81bbc9;
+$warning: #c1875f;
+$success: #86bb8d;
+$info: #e5e1d8;
+$white: #fff;
+$black: #000;
+
+$card-colors:(
+    "sales": $warning,
+    "profit": $success,
+    "orders": $primary,
+    "visits": $black,
+)
+
+

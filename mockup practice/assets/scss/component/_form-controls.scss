@@ -1,0 +1,17 @@
+// header search
+
+input[type="search"]{
+    border:none;
+    outline: none;
+}
+
+#search{
+    padding-left: 0.75rem;
+   &::placeholder{
+       padding-left: 10px;
+   }
+}
+
+#filter {
+    width: 50%;
+}

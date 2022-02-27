@@ -1,0 +1,14 @@
+// card colors
+@each $name,
+$value in $card-colors {
+    .#{$name}-card {
+        .card-inner {
+            background-color: rgba($value, 0.2);
+        }
+
+        .icon-counter-arrow {
+            color: $value;
+        }
+
+    }
+}

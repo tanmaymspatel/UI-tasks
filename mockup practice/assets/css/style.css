@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200&display=swap");
+.sales-card .card-inner {
+  background-color: rgba(193, 135, 95, 0.2);
+}
+
+.sales-card .icon-counter-arrow {
+  color: #c1875f;
+}
+
+.profit-card .card-inner {
+  background-color: rgba(134, 187, 141, 0.2);
+}
+
+.profit-card .icon-counter-arrow {
+  color: #86bb8d;
+}
+
+.orders-card .card-inner {
+  background-color: rgba(129, 187, 201, 0.2);
+}
+
+.orders-card .icon-counter-arrow {
+  color: #81bbc9;
+}
+
+.visits-card .card-inner {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.visits-card .icon-counter-arrow {
+  color: #000;
+}
+
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #000;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+a {
+  cursor: pointer;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-vertical {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  padding: 1rem 0;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-grow-1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.flex-shrink-1 {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.flex-shrink-0 {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header {
+  height: 70px;
+  padding-left: 2.5rem;
+}
+
+#header .header-search {
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 0.2rem 7rem 0.2rem 0.5rem;
+}
+
+#header .header-search .icon {
+  cursor: pointer;
+}
+
+#nav-sidebar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 200px;
+          flex: 0 0 200px;
+  border-right: 1px solid #000;
+}
+
+#nav-sidebar .side-header {
+  height: 70px;
+  padding-left: 2.5rem;
+  margin-left: 0.1rem;
+}
+
+#nav-sidebar .side-header .brand-logo {
+  height: 1rem;
+  margin-left: 5px;
+}
+
+#nav-sidebar .nav-link {
+  color: #000;
+  padding: 0.5rem 0 0.5rem 2.5rem;
+  margin: 0.2rem 0 0.2rem 0.1rem;
+}
+
+#nav-sidebar .nav-link.active {
+  border-left: 5px solid #000;
+}
+
+#nav-sidebar .nav-link .icon {
+  font-size: 1rem;
+}
+
+#nav-sidebar .nav-link .nav-text {
+  font-size: 0.85rem;
+  padding-left: 1.5rem;
+}
+
+#nav-sidebar .nav-actions {
+  padding-bottom: 4rem;
+}
+
+#nav-sidebar .nav-actions .user-profile {
+  height: 45px;
+  padding: 0.5rem;
+  border: 1px solid #000;
+  border-radius: 15px;
+}
+
+#sales-sidebar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 250px;
+          flex: 0 0 250px;
+}
+
+.main-content {
+  padding: 1.5rem;
+}
+
+.main-content .introduction {
+  padding: 0 1rem;
+}
+
+.main-content .introduction h1 {
+  font-size: 1.25rem;
+}
+
+.main-content .introduction h4 {
+  font-size: 0.5rem;
+  font-weight: 400;
+}
+
+.main-content .introduction .filter-products {
+  padding: 0.5rem;
+  margin: 1rem 0 1rem 1rem;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 15%;
+}
+
+.cards-wrapper {
+  margin: 0 -0.5rem;
+}
+
+.counter-wrapper {
+  background-color: #e5e1d875;
+  margin: 0 1rem;
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+
+.counter {
+  width: 33.3333%;
+}
+
+.counter .counter-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.counter .counter-icon .icon {
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: #e5e1d8;
+  border-radius: 50%;
+}
+
+.counter .counter-name {
+  font-size: 0.625rem;
+  font-weight: 400;
+  padding-top: 1.25rem;
+}
+
+.counter .counter-number {
+  font-size: 1.75rem;
+  padding-top: 0.25rem;
+}
+
+.counter .counter-details {
+  font-size: 0.625rem;
+  padding-top: 0.25rem;
+  font-weight: 400;
+}
+
+.card {
+  width: 50%;
+  padding: 0 1.5rem;
+  margin: 1rem 0;
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+
+.card .card-inner {
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.card .icon-counter-arrow {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  bottom: auto;
+  left: auto;
+}
+
+input[type="search"] {
+  border: none;
+  outline: none;
+}
+
+#search {
+  padding-left: 0.75rem;
+}
+
+#search::-webkit-input-placeholder {
+  padding-left: 10px;
+}
+
+#search:-ms-input-placeholder {
+  padding-left: 10px;
+}
+
+#search::-ms-input-placeholder {
+  padding-left: 10px;
+}
+
+#search::placeholder {
+  padding-left: 10px;
+}
+
+#filter {
+  width: 50%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

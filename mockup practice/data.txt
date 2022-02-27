@@ -1,0 +1,25 @@
+sidebar left - 200px
+	- text - 12px
+	- icon - 16px
+	- image-size - 35px
+	- height - 12px
+
+	-sideheader - 100px
+	- space above li - 35px
+	space left to icon - 40px
+sidebar right - 250px
+main indentation - 45px
+
+
+
+
+body bg - #fff
+text - color - #000 
+1. first-card row - f9f8f3
+	icon-bg - d9d7cb
+
+2. second card row - 
+	1. c1875f
+	2. 88c28f
+	3. 81bbc9
+	4. #fff

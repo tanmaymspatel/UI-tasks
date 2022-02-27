@@ -1,0 +1,50 @@
+// navigation sidebar styling
+#nav-sidebar {
+    flex: 0 0 $nav-sidebar-size;
+    border-right: 1px solid $black;
+
+    .side-header {
+        height: $header-size;
+        padding-left: $nav-left-padding;
+        margin-left: 0.1rem;
+
+        .brand-logo {
+            height: 1rem;
+            margin-left: 5px;
+        }
+    }
+
+    .nav-link {
+        color: $black;
+        padding: 0.5rem 0 0.5rem $nav-left-padding;
+        margin: 0.2rem 0 0.2rem 0.1rem;
+        &.active{
+            border-left:5px solid $black;
+        }
+
+        .icon {
+            font-size: $icon-size;
+
+        }
+
+        .nav-text {
+            font-size: $side-nav-text;
+            padding-left: 1.5rem;
+        }
+    }
+
+    .nav-actions {
+        padding-bottom: 4rem;
+        .user-profile {
+            height: 45px;
+            padding: 0.5rem;
+            border: 1px solid $black;
+            @include border-radius(15px);
+        }
+    }
+}
+
+
+#sales-sidebar{
+    flex: 0 0 $sales-sidebar-size;
+}

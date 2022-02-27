@@ -1,0 +1,27 @@
+.main-content {
+    padding: $main-content-padding;
+
+    .introduction {
+        padding: 0 1rem;
+
+        h1{
+            font-size: 1.25rem;
+        }
+
+        h4{
+            font-size: 0.5rem;
+            font-weight: 400;
+        }
+
+        .filter-products {
+            padding: 0.5rem;
+            margin: 1rem 0 1rem 1rem;
+            border: 1px solid $black;
+            border-radius: 10px;
+            width: 15%;
+        }
+    }
+}
+.cards-wrapper{
+    margin: 0 -0.5rem;
+}
