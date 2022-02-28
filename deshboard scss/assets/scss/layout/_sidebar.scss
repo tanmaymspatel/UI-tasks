@@ -7,6 +7,14 @@ input#check {
     flex-basis: $flex-basis;
     background-color: $white;
     transition: $transition;
+    @include screen-size(x-sm) {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        transform: translateX(-90px);
+        width: 90px;
+        z-index: 100;
+    }
     .nav-item {
         padding: 1rem 0;
         margin: 1rem 0;
@@ -28,17 +36,37 @@ input#check {
     transform: translateY(-50%);
     font-size: 2rem;
     transition: $transition;
-    color: $primary;
+    border: 1px solid rgba($dark, 0.1);
+    border-radius: 50%;
     cursor: pointer;
+    color: $primary;
+    @include screen-size(x-sm) {
+        transform: rotate(180deg);
+        z-index: 100;
+    }
 }
 
 #check:checked {
     & ~ #sidebar {
         transform: translateX(-100%);
         flex-basis: 0;
+        @include screen-size(x-sm) {
+            transform: translateX(0);
+        }
     }
     & ~ .sidebar-toggle .icon-toggle {
         transform: rotate(180deg);
+        @include screen-size(x-sm) {
+            transform: rotate(0deg);
+            transform: translateX(90px);
+        }
+    }
+
+    & ~ main {
+        @include screen-size(x-sm) {
+            filter: blur(1px);
+            pointer-events: none;
+        }
     }
 }
 

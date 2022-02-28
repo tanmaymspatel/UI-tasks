@@ -6,31 +6,13 @@
     background-color: $white;
     padding: 0 2rem;
     border-bottom: 1px solid $header-border-color;
-}
-.top-left-nav {
-    .brand-logo {
-        .icon {
-            font-size: $icon-size;
-            color: $header-icon;
+    & > div{
+        @include screen-size(lg){
+            padding-top: 1rem;
         }
-    }
-
-    .search-bar{
-        @include screen-size(sm){
-            display: none;
+        @include screen-size(md){
+            padding-top: 0rem;
         }
-        .search-btn {
-            padding: $header-search-pt 1rem $header-search-pb;
-            background-color: $primary;
-        }
-    }
-    
-    
-}
-
-.top-right-nav {
-    @include screen-size(sm){
-        display: none;
     }
     .notifications {
         .icon {
@@ -49,23 +31,85 @@
             }
         }
     }
-    .user-image {
-        padding-left: 1.5rem;
-        .user-avatar {
-            width: 30px;
-            height: 30px;
+}
+.top-left-nav {
+    .brand-logo {
+        .icon {
+            font-size: $icon-size;
+            color: $header-icon;
+            @include screen-size(sm){
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .search-bar {
+        @include screen-size(sm) {
+            display: none;
         }
     }
 }
-.mobile-menu{
+
+.top-right-nav {
+    @include screen-size(sm) {
+        display: none;
+    }
+}
+
+.user-image {
+    padding-left: 1.5rem;
+    .user-avatar {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+// mobile menu
+.mobile-menu {
     position: absolute;
     top: 2rem;
     right: 2rem;
     font-size: 1.5rem;
-    display:none;
-    @include screen-size(sm){
+    display: none;
+    @include screen-size(sm) {
         display: block;
     }
+    .icon-mobile-menu {
+        color: $icon-color;
+    }
+}
+
+.toggle-menu-content {
+    opacity: 0;
+    height: 0;       
+    padding: 1rem 2rem;
+    background-color: $white;  
+    box-shadow: 0 0 5px 4px #0000001a;   
+    transition: $transition;                                     
+    @include screen-size(sm) {
+        width: 250px;
+        position: absolute;
+        top: 30px;
+        right: -25px;  
+        @include screen-size(sm){} 
+    }
+    @include screen-size(x-sm){
+        padding: 1rem;  
+        width: 250px;
+    }
+    .toggle-mobile-nav{
+        padding: 1rem 0;
+    }
+}
+
+//  mobile toggle
+#mobile-toggle{
+    display: none;
+    
+}
+#mobile-toggle:checked ~ .toggle-menu-content{ 
+    height: 130px;
+    opacity: 1;
 }
 
 // .topbar {

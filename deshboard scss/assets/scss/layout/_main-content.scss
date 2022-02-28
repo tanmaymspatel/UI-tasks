@@ -15,26 +15,29 @@
 
 // table and graph 
 .dashboard-statistics {
-    height: 350px;
+    
     margin: 0 -1.5rem;
 
     //  tablet responsive
-    @include screen-size(md){
+    @include screen-size(lg){
     //    height: auto;
        flex-direction: column;
        margin: 0;
+    //    padding: 0 0 2rem 0;
     }
     .product-table,
     .sales-chart {
         margin: 0 1.5rem;
-        @include screen-size(md){
-            margin: 0 0 2rem 0;
+        @include screen-size(lg){
+            margin: 0;
          }
         
     }
     .product-table{
+        height:400px;
+        overflow: hidden;
         width: 65%;
-        @include screen-size(md){
+        @include screen-size(lg){
             width: 100%;
         }
     }
@@ -42,29 +45,9 @@
         width: 35%;
         background-color: $white;
         padding: 1.5rem;
-        @include screen-size(md){
+        @include screen-size(lg){
             width: 100%;
+            margin: 3rem 0 0 0;
         }
     }
 }
-
-// .content {
-//     &-wrapper {
-//         padding         : 1.5rem;
-//         background-color: $content-wrapper-bg;
-//     }
-
-//     &-title {
-//         margin-bottom: $content-title-margin-bottom;
-//         font-size    : $content-title-font-size;
-//     }
-// }
-
-// .fighting-list-container {
-//     background-color: #2d353b;
-//     border-radius: $border-radius;
-
-//     .fighting-list-header {
-//         padding: 1rem 1.5rem;
-//     }
-// }

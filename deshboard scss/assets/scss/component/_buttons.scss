@@ -5,3 +5,8 @@
     color: $white;
     font-family: $font-family;
 }
+
+.search-btn {
+    padding: $header-search-pt 1rem $header-search-pb;
+    background-color: $primary;
+}

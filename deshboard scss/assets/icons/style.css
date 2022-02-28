@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'app';
-  src:  url('fonts/app.eot?gr1ql1');
-  src:  url('fonts/app.eot?gr1ql1#iefix') format('embedded-opentype'),
-    url('fonts/app.ttf?gr1ql1') format('truetype'),
-    url('fonts/app.woff?gr1ql1') format('woff'),
-    url('fonts/app.svg?gr1ql1#app') format('svg');
+  src:  url('fonts/app.eot?2gg07y');
+  src:  url('fonts/app.eot?2gg07y#iefix') format('embedded-opentype'),
+    url('fonts/app.ttf?2gg07y') format('truetype'),
+    url('fonts/app.woff?2gg07y') format('woff'),
+    url('fonts/app.svg?2gg07y#app') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -62,6 +62,9 @@
 .icon-mobile-menu:before {
   content: "\e910";
 }
+.icon-toggle:before {
+  content: "\e912";
+}
 .icon-logo:before {
   content: "\e90d";
 }
@@ -73,7 +76,4 @@
 }
 .icon-search:before {
   content: "\e90c";
-}
-.icon-toggle:before {
-  content: "\e90f";
 }

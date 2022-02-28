@@ -4,47 +4,70 @@
     width: 100%;
     text-align: left;
     background: $white;
-    border-collapse: collapse;
+    border-spacing: 0 1rem;
     // padding: 0 1.5rem;
     // border-spacing: 0 1rem;
     th {
-        padding: 2rem 0 2rem 1.5rem;
+        padding: 1rem 0 1rem 1.5rem;
         color: $secondary;
         font-size: 1.25rem;
-        &:not(:nth-child(2)),
-        &:not(:first-child) {
-            width: 20%;
+        // &:not(:nth-child(2)),
+        // // &:not(:first-child) {
+        // //     width: 20%;
+        // // }
+        &:nth-child(3) {
+            width: 40%;
         }
-        &:nth-child(2),
+        &:nth-child(2){
+
+            width: 15%;
+        }
         &:first-child {
-            width: 10%;
+            width: 8%;
         }
     }
     td {
         background-color: $header-search-background;
         padding: 0.75rem 0 0.75rem 1.5rem;
-        &:not(:nth-child(2)),
-        &:not(:first-child) {
-            width: 20%;
+        // &:not(:nth-child(2)),
+        // &:not(:first-child) {
+        //     width: 20%;
+        // }
+        &:nth-child(3) {
+            width: 40%;
         }
-        &:nth-child(2),
+        &:nth-child(2){
+
+            width: 15%;
+        }
         &:first-child {
-            width: 10%;
+            width: 8%;
         }
-        img {
-            height: 50px;
+        .t-image {
+            height: 40px;
         }
     }
-    tbody{
-        tr{
-            border-bottom: 10px solid $white;
-        }
+    .active-text{
+        color: $active;
     }
 }
+//     tbody {
+//         tr {
+//             // border-bottom: 10px solid $white;
+//         }
+//     }
+// }
 
-.product-table{
+.product-table {
     padding: 0 1.5rem;
     background: $white;
+}
+
+.product-name-cell {
+    max-width: 6rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 // .table-layout-fixed {
 //     table-layout: fixed;
