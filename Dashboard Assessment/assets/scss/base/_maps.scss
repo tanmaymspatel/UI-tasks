@@ -1,0 +1,30 @@
+// // all maps scss
+
+// // card icon colors
+// @each $name, $value in $icon-colors {
+//     .icon-#{$name} {
+//         color: $value;
+//         background-color: rgba($value, 0.2);
+//     }
+// }
+
+// //  card on hover
+
+// @each $name, $value in $icon-colors {
+//     .card-#{$name} {
+//         &:hover {
+//             .card-inner {
+//                 background-color: $value;
+//                 .icon:first-child{
+//                     background-color: rgba($white, 0.2);
+//                 }
+//                 .icon, .card-title, .card-statitics, .card-details{
+//                     color:$white;
+//                 }
+//                 .top-part-card {
+//                     border-color: $white;
+//                 }
+//             }
+//         }
+//     }
+// }

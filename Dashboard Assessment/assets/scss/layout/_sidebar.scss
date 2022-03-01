@@ -1,0 +1,59 @@
+#sidebar {
+    flex: 0 0 $sidebar-size;
+    padding: 1rem 0;
+    transition: $transition;
+    @include screen-size(md) {
+        position: absolute;
+        border: 0;
+        width: 100%;
+        background-color: $white;
+        transform: translateX(-100%);
+    }
+    .sidebar-title {
+        padding: 1rem;
+        text-transform: uppercase;
+        @include screen-size(sm){
+            padding: 0.75rem 1rem;
+        }
+        
+    }
+    .nav-link {
+        display: flex;
+        align-items: center;
+        padding: 1.25rem 1rem;
+        transition: $transition;
+        @include screen-size(md){
+            padding: 1rem 1rem;
+        }
+        &:hover,
+        &.active {
+            background-color: rgba($success, 0.2);
+
+            .icon,
+            .nav-text {
+                color: $success;
+            }
+        }
+        &.active {
+            border-left: 5px solid $success;
+        }
+        .icon,
+        .nav-text {
+            transition: $transition;
+        }
+        .nav-text {
+            padding-left: 0.5rem;
+            font-size: 1.25rem;
+            color: $icon-color;
+        }
+        .icon {
+            color: $icon-color;
+            font-size: $icon-size;
+        }
+    }
+    .other-nav {
+        padding-top: 2rem;
+    }
+}
+
+

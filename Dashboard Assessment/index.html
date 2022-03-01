@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Assessment</title>
+    <link rel="stylesheet" href="./assets/icons/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- start : header -->
+        <input type="checkbox" id="check-toggle">
+        <header id="header" class="d-flex align-items-center position-relative">
+            <div class="brand-logo">
+                <h3>TallyScan</h3>
+            </div>
+            <div class="header-details d-flex justify-content-between align-items-center flex-grow-1">
+                <h3 class="header-title flex-grow-1">Dashboard</h3>
+                <!-- start: mobile check -->
+                <input type="checkbox" id="mobile-check">
+                <!-- end: mobile check -->
+
+                <div class="right-header-nav d-flex align-items-center">
+                    <a href=""><span class="icon icon-alert"></span></a>
+                    <div class="user-profile d-flex align-items-center">
+                        <div class="user-image">
+                            <a href="">
+                                <figure>
+                                    <img src="/assets/images/user-image.svg" alt="user image">
+                                </figure>
+                            </a>
+                        </div>
+                        <a href="">
+                            <h3 class="user-name">John Smith</h3>
+                        </a>
+                        <a href=""><span class="icon icon-drop-down"></span></a>
+                    </div>
+                </div>
+                <div class="mobile-dropdown">
+                    <label for="mobile-check">
+                        <span class="icon icon-toggle"></span>
+                    </label>
+                </div>
+            </div>
+        </header>
+        <div class="main-area d-flex flex-grow-1 h-100 overflow-hidden">
+            <!-- start : sidebar -->
+
+            <!-- start: toggle checkbox -->
+
+            <!-- start: toggle checkbox -->
+            <aside id="sidebar" class="d-flex flex-column h-100 position-relative">
+                <div class="d-flex flex-column">
+                    <ul class="general-nav overflow-vertical flex-grow-1">
+                        <h4 class="sidebar-title">General</h4>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="">
+                                <span class="icon icon-search"></span>
+                                <span class="nav-text">Search</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <span class="icon icon-alert"></span>
+                                <span class="nav-text">Alerts</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <span class="icon icon-tags"></span>
+                                <span class="nav-text">Tags</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="other-nav">
+                        <h4 class="sidebar-title">Other</h4>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <span class="icon icon-settings"></span>
+                                <span class="nav-text">Settings</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <span class="icon icon-tips"></span>
+                                <span class="nav-text">Tips</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <span class="icon icon-trash"></span>
+                                <span class="nav-text">Trash</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <span class="icon icon-logout"></span>
+                                <span class="nav-text">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <label class="toggle-icon" for="check-toggle">
+                <span class="icon icon-mobile-menu"></span>
+            </label>
+            <!-- end : sidebar -->
+            <!-- start : main body -->
+            <main class="flex-grow-1 main-content overflow-auto">
+                <!-- start :  filter -->
+                <div class="row-wrapper filter-wrapper d-flex">
+                    <div class="filter">
+                        <span class="icon icon-filter"></span>
+                        <span>Filter</span>
+                    </div>
+                </div>
+                <!--  end : filter -->
+                <!--  start : card row -->
+                <div class="row-wrapper card-wrapper">
+                    <div class="row">
+                        <!--  start : card  -->
+                        <div class="card card-barcode">
+                            <div class="card-inner d-flex justify-content-between">
+                                <div class="card-details">
+                                    <h4 class="card-name">Scans</h4>
+                                    <h3 class="card-states">350</h3>
+                                </div>
+                                <div class="card-icon">
+                                    <span class="icon icon-barcode"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  end : card  -->
+                        <!--  start : card  -->
+                        <div class="card card-list">
+                            <div class="card-inner d-flex justify-content-between">
+                                <div class="card-details">
+                                    <h4 class="card-name">List</h4>
+                                    <h3 class="card-states">350</h3>
+                                </div>
+                                <div class="card-icon">
+                                    <span class="icon icon-list"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  end : card  -->
+                        <!--  start : card  -->
+                        <div class="card card-cost">
+                            <div class="card-inner d-flex justify-content-between">
+                                <div class="card-details">
+                                    <h4 class="card-name">Cost</h4>
+                                    <h3 class="card-states">$345</h3>
+                                </div>
+                                <div class="card-icon">
+                                    <span class="icon icon-cost"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  end : card  -->
+                        <!--  start : card  -->
+                        <div class="card card-buy">
+                            <div class="card-inner d-flex justify-content-between">
+                                <div class="card-details">
+                                    <h4 class="card-name">Buy Now</h4>
+                                    <h3 class="card-states">350</h3>
+                                </div>
+                                <div class="card-icon">
+                                    <span class="icon icon-buy"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  end : card  -->
+                        <!--  start : card  -->
+                        <div class="card card-dollar">
+                            <div class="card-inner d-flex justify-content-between">
+                                <div class="card-details">
+                                    <h4 class="card-name">Buy Cheaper</h4>
+                                    <h3 class="card-states">350</h3>
+                                </div>
+                                <div class="card-icon">
+                                    <span class="icon icon-dollar"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  end : card  -->
+                        <!--  start : card  -->
+                        <div class="card card-heartbeat">
+                            <div class="card-inner d-flex justify-content-between">
+                                <div class="card-details">
+                                    <h4 class="card-name">Buy Healthier</h4>
+                                    <h3 class="card-states">350</h3>
+                                </div>
+                                <div class="card-icon">
+                                    <span class="icon icon-heartbeat"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  end : card  -->
+                    </div>
+                </div>
+                <!--  end : card row -->
+                <!--  start : table row -->
+                <div class="row-wrapper table-wrapper">
+                    <h3 class="table-title">Recent Activity</h3>
+                    <div class="order-table overflow-auto">
+                        <table class="data-table">
+                            <thead class="t-head">
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Date</th>
+                                    <th>Type</th>
+                                    <th>Est. Cost</th>
+                                    <th>Last</th>
+                                    <th>List</th>
+                                    <th>Auto</th>
+                                    <th class="seller-image">Buy Now</th>
+                                </tr>
+                            </thead>
+                            <tbody class="t-body">
+                                <tr>
+                                    <td>
+                                        <div class="d-flex">
+                                            <img src="./assets/images/product-image.svg" alt="product-image"
+                                                class="product-image">
+                                            <p class="product-name">Skippy Peanut Butter 160z</p>
+                                        </div>
+                                    </td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td class="table-type">
+                                        <p class="text-discarded">Discarded</p>
+                                    </td>
+                                    <td>$40.27</td>
+                                    <td>18 Aug</td>
+                                    <td>Grocery</td>
+                                    <td>No</td>
+                                    <td><img src="./assets/images/amazon.svg" alt="seller" class="seller-image"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex">
+                                            <img src="./assets/images/product-image.svg" alt="product-image"
+                                                class="product-image">
+                                            <p class="product-name">Skippy Peanut Butter 160z</p>
+                                        </div>
+                                    </td>
+                                    <td>08 Nov, 8:35pm</td>
+                                    <td class="table-type">
+                                        <p class="text-want">want</p>
+                                    </td>
+                                    <td>$76.50</td>
+                                    <td>17 Aug</td>
+                                    <td>August</td>
+                                    <td>No</td>
+                                    <td><img src="./assets/images/amazon.svg" alt="seller" class="seller-image"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex">
+                                            <img src="./assets/images/product-image.svg" alt="product-image"
+                                                class="product-image">
+                                            <p class="product-name">Skippy Peanut Butter 160z</p>
+                                        </div>
+                                    </td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td class="table-type">
+                                        <p class="text-waiting">Waiting</p>
+                                    </td>
+                                    <td>$40.27</td>
+                                    <td>18 Aug</td>
+                                    <td>Grocery</td>
+                                    <td>No</td>
+                                    <td><img src="./assets/images/amazon.svg" alt="seller" class="seller-image"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex">
+                                            <img src="./assets/images/product-image.svg" alt="product-image"
+                                                class="product-image">
+                                            <p class="product-name">Skippy Peanut Butter 160z</p>
+                                        </div>
+                                    </td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td class="table-type">
+                                        <p class="text-discarded"> Discarded</p>
+                                    </td>
+                                    <td>$40.27</td>
+                                    <td>18 Aug</td>
+                                    <td>Grocery</td>
+                                    <td>No</td>
+                                    <td><img src="./assets/images/amazon.svg" alt="seller" class="seller-image"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex">
+                                            <img src="./assets/images/product-image.svg" alt="product-image"
+                                                class="product-image">
+                                            <p class="product-name">Skippy Peanut Butter 160z</p>
+                                        </div>
+                                    </td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td class="table-type">
+                                        <p class="text-cancelled">Cancelled</p>
+                                    </td>
+                                    <td>$40.27</td>
+                                    <td>18 Aug</td>
+                                    <td>Grocery</td>
+                                    <td>No</td>
+                                    <td><img src="./assets/images/amazon.svg" alt="seller" class="seller-image"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex">
+                                            <img src="./assets/images/product-image.svg" alt="product-image"
+                                                class="product-image">
+                                            <p class="product-name">Skippy Peanut Butter 160z</p>
+                                        </div>
+                                    </td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td class="table-type">
+                                        <p class="text-want">Want</p>
+                                    </td>
+                                    <td>$40.27</td>
+                                    <td>18 Aug</td>
+                                    <td>Grocery</td>
+                                    <td>No</td>
+                                    <td><img src="./assets/images/amazon.svg" alt="seller" class="seller-image"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex">
+                                            <img src="./assets/images/product-image.svg" alt="product-image"
+                                                class="product-image">
+                                            <p class="product-name">Skippy Peanut Butter 160z</p>
+                                        </div>
+                                    </td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td class="table-type">
+                                        <p class="text-want">Want</p>
+                                    </td>
+                                    <td>$40.27</td>
+                                    <td>18 Aug</td>
+                                    <td>Grocery</td>
+                                    <td>No</td>
+                                    <td><img src="./assets/images/amazon.svg" alt="seller" class="seller-image"></td>
+                                </tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <img src="./assets/images/product-image.svg" alt="product-image"
+                                            class="product-image">
+                                        <p class="product-name">Skippy Peanut Butter 160z</p>
+                                    </div>
+                                </td>
+                                <td>07 Nov, 8:35pm</td>
+                                <td class="table-type">
+                                    <p class="text-want">Want</p>
+                                </td>
+                                <td>$40.27</td>
+                                <td>18 Aug</td>
+                                <td>Grocery</td>
+                                <td>No</td>
+                                <td><img src="./assets/images/amazon.svg" alt="seller" class="seller-image"></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </main>
+            <!-- end : main body -->
+        </div>
+        <!-- end : header -->
+    </div>
+</body>
+
+</html>

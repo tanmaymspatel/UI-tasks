@@ -1,0 +1,49 @@
+// Theme Colors
+$primary: #389cff; // list
+$warning: #fb8921;
+$success: #00b11c; // filter, search
+$info: #25a674;
+$purple: #6967fe;
+$danger: #f65c5d;
+$hope: #dc9a43;
+
+// general
+$grey: #393b48;
+$white: #ffffff;
+$black: #000;
+
+$icon-color: #82838c;
+$body-bg : #fafafa;
+
+// header
+
+$avatar-bg: #99d5ec;
+
+
+
+
+// card icon colors
+
+$icon-colors: (
+  "barcode": $black,
+  "list": $primary,
+  "cost": $info,
+  "buy": $warning,
+  "dollar": $purple,
+  "heartbeat": $danger
+);
+
+// table text
+
+$text-colors: (
+  "discarded": $danger,
+  "want": $success,
+  "waiting": $hope,
+  "cancelled": $black
+);
+
+
+
+
+
+

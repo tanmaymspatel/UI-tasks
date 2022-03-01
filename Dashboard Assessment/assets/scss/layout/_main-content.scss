@@ -1,0 +1,92 @@
+.main-content{
+    padding: 3rem;
+    background-color: $body-bg;
+    .filter-wrapper{
+        justify-content: flex-end;
+        margin-top: -2rem;
+    }
+    .card-wrapper {
+        margin: 0 -$card-spacing;
+        @include screen-size(xxl){
+            margin-bottom: -3rem;
+        }
+    }
+}
+
+
+#check-toggle{
+    display: none;
+
+}
+
+
+.icon-mobile-menu {
+    position: absolute;
+    top: 30px;
+    left: 230px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: $transition;
+    @include screen-size(md){
+        left: 40px;
+    }
+    @include screen-size(x-sm){
+        left: 20px;
+        font-size: 1.5rem;
+        top: 32px;
+    }
+}
+
+#check-toggle:checked {
+    & ~ #header{
+        .brand-logo{
+            transform: translateX(-200px);
+            @include screen-size(md){
+                transform: translateX(0);
+            }
+            
+        }
+    }
+    & ~ .main-area {
+         #sidebar {
+            flex: 0 0 90px;
+            align-items: center;
+            z-index: 1000;
+            @include screen-size(md){
+                transform: translateX(0);
+                align-items: initial;
+            }
+            .sidebar-title {
+                padding: 1rem 0.25rem;
+                @include screen-size(sm){
+                    padding: 1.5rem;
+                }
+            }
+            .nav-link {
+                width: 80%;
+            }
+            .nav-text {
+                display: none;
+                transform: translateX(-200px);
+                @include screen-size(md){
+                    display: block;
+                    transform: translateX(0);
+                }
+            }
+            .icon{
+                font-size: 1.25rem;
+            }
+        }
+        .toggle-icon{
+            .icon-mobile-menu{
+                left:20px;  
+                @include screen-size(md){
+                    left:40px;
+                }
+                @include screen-size(x-sm){
+                    left:20px;
+                }
+            }
+        }
+    }
+}

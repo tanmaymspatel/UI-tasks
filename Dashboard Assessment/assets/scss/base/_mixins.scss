@@ -1,0 +1,36 @@
+// All the SCSS mixins goes here
+
+@mixin position ($position: absolute, $top: auto, $right: auto, $bottom: auto, $left: auto) {
+    position: $position;
+    top     : $top;
+    right   : $right;
+    bottom  : $bottom;
+    left    : $left;
+}
+
+// responsive
+
+
+@mixin screen-size($point) {
+    @if $point == xxl {
+      @media (max-width: 1400px) { @content ; }
+   }
+    @else if $point == xl {
+      @media (max-width: 1200px) { @content ; }
+   }
+    @else if $point == lg {
+      @media (max-width: 992px) { @content ; }
+   }
+     @if $point == md {
+      @media (max-width: 768px) { @content ; }
+   }
+   
+   @else if $point == sm {
+      @media (max-width: 576px)  { @content ; }
+ 
+   }
+   @else if $point == x-sm {
+      @media (max-width: 320px)  { @content ; }
+ 
+   }
+ }

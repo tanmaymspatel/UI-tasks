@@ -1,0 +1,67 @@
+.card {
+    width: 16.66%;
+    padding: 0 $card-spacing;
+    @include screen-size(xxl){
+        width: 33.33%;
+        margin-bottom: 2rem;
+    }
+    @include screen-size(lg){
+        width: 50%;
+    }
+    @include screen-size(sm){
+        width: 100%;
+    }
+    .card-inner {
+        background-color: $white;
+        padding: 1.5rem;
+        border-radius: $border-radius;
+        transition: $transition;
+    }
+    .card-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon {
+            padding: 1rem;
+            border-radius: 50%;
+            font-size: 1.5rem;
+        }
+    }
+    .card-name {
+        color: $grey;
+        font-weight: 400;
+        padding-bottom: 0.5rem;
+    }
+    .card-states {
+        font-size: 1.5rem;
+    }
+}
+
+// map
+
+@each $name, $value in $icon-colors {
+    .icon-#{$name} {
+        color: $value;
+        background-color: rgba($value, 0.15);
+    }
+}
+
+
+// hover
+
+@each $name, $value in $icon-colors {
+    .card-#{$name} {
+        &:hover {
+            .card-inner {
+                background-color: $value;   
+            }
+            .card-name, .card-states{
+                color: $white;
+            }
+            .icon{
+                color: $white;
+                background-color: rgba($white,0.15);
+            }
+        }
+    }
+}
