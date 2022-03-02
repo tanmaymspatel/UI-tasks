@@ -12,13 +12,17 @@
     width: 100%;
     background-color: $white;
     border-spacing: 0 1rem;
-    @include position($position:relative);
+    table-layout: fixed;
+    // @include position($position:relative);
     .t-head{
         th{
-            @include position($position:sticky, $top: 0);
+            // @include position($position:sticky, $top: 0);
+            position: sticky;
+            top: 0;
             padding: 1rem 1.5rem;
             font-weight: 400;
             color: $grey;
+            // background-color: $white;
         }
     }
     .t-body{
@@ -44,6 +48,10 @@
         height: 40px;
     }
 }
+
+// .table-wrapper{
+//     width: 1200px;
+// }
 
 
 // map

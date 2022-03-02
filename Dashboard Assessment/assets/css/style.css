@@ -13,7 +13,7 @@ body, .wrapper {
   height: 100%;
 }
 
-*, body {
+body {
   overflow: hidden;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
@@ -672,20 +672,13 @@ a, button {
   width: 100%;
   background-color: #ffffff;
   border-spacing: 0 1rem;
-  position: relative;
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
+  table-layout: fixed;
 }
 
 .data-table .t-head th {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  right: auto;
-  bottom: auto;
-  left: auto;
   padding: 1rem 1.5rem;
   font-weight: 400;
   color: #393b48;
