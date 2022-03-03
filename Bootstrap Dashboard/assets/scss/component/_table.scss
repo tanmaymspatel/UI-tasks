@@ -1,0 +1,63 @@
+.table-title {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+}
+
+.order-table {
+    height: 480px;
+}
+.data-table{
+    text-align: left;
+    width: 100%;
+    background-color: $white;
+    border-spacing: 0 1rem;
+    table-layout: fixed;
+    // @include position($position:relative);
+    .t-head{
+        th{
+            // @include position($position:sticky, $top: 0);
+            position: sticky;
+            top: 0;
+            padding: 1rem 1.5rem;
+            font-weight: 400;
+            color: $grey;
+            // background-color: $white;
+        }
+    }
+    .t-body{
+        td{
+            padding: 1rem 1.5rem;
+            font-weight: 500;
+        }
+        .product-image{
+            height: 20px;
+            margin-right: 10px;
+        }
+        .table-type{          
+            p {
+            text-align: center;
+            padding: 0.5rem;
+            width: 105px;
+            border-radius: 30px;
+        }
+    }
+
+    }
+    .seller-image{
+        height: 40px;
+    }
+}
+
+// .table-wrapper{
+//     width: 1200px;
+// }
+
+
+// map
+@each $name, $value in $text-colors {
+    .text-#{$name} {
+        color: $value;
+        background-color: rgba($value, 0.15);
+    }
+}

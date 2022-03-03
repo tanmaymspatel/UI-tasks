@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'app';
+  src:  url('fonts/app.eot?wt2jb5');
+  src:  url('fonts/app.eot?wt2jb5#iefix') format('embedded-opentype'),
+    url('fonts/app.ttf?wt2jb5') format('truetype'),
+    url('fonts/app.woff?wt2jb5') format('woff'),
+    url('fonts/app.svg?wt2jb5#app') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'app' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tips:before {
+  content: "\e900";
+}
+.icon-buy:before {
+  content: "\e901";
+}
+.icon-logout:before {
+  content: "\e908";
+}
+.icon-cost:before {
+  content: "\e90c";
+}
+.icon-mobile-menu:before {
+  content: "\e910";
+}
+.icon-toggle:before {
+  content: "\e90f";
+}
+.icon-filter:before {
+  content: "\e902";
+}
+.icon-dollar:before {
+  content: "\e909";
+}
+.icon-trash:before {
+  content: "\e903";
+}
+.icon-settings:before {
+  content: "\e904";
+}
+.icon-alert:before {
+  content: "\e905";
+}
+.icon-tags:before {
+  content: "\e906";
+}
+.icon-list:before {
+  content: "\e907";
+}
+.icon-drop-down:before {
+  content: "\e90e";
+}
+.icon-search:before {
+  content: "\e90d";
+}
+.icon-heartbeat:before {
+  content: "\e90a";
+}
+.icon-barcode:before {
+  content: "\e90b";
+}

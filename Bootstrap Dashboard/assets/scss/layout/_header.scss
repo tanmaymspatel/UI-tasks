@@ -1,0 +1,110 @@
+#header {
+    height: $header-size;
+    border-bottom: 1px solid rgba($black, 0.1);
+    .brand-logo {
+        width: $sidebar-size;
+        padding: 0 1rem;
+        @include screen-size(md) {
+            margin-left: 4rem;
+        }
+        @include screen-size(x-sm){
+            margin-left: 2rem;
+            width: 125px;
+        }
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            transition: $transition;
+            @include screen-size(x-sm){
+                font-size: $font-size-base;
+            }
+            
+        }
+    }
+    .header-details {
+        padding: 0 0.5rem;
+        .header-title {
+            font-size: 1.5rem;
+            margin-left: 6rem;
+            font-weight: 600;
+            @include screen-size(sm) {
+                margin-left: 1rem;
+            }
+            @include screen-size(x-sm) {
+                margin-left: 0rem;
+                font-size: $font-size-base;
+            }
+        }
+    }
+    .right-header-nav {
+        transition: $transition;
+        @include screen-size(sm) {
+            position: absolute;
+            top: 20px;
+            z-index: 1000;
+            right: 60px;
+            background-color: white;
+            padding: 0.5rem;
+            box-shadow: 0 0 7px 1px rgba($black, 0.15);
+            transform: translateX(400px);
+        }
+        .icon,
+        .user-profile {
+            padding: 0 0.5rem;
+        }
+        .icon {
+            font-size: $icon-size;
+            color: $icon-color;
+            &.icon-drop-down {
+                color: $black;
+            }
+        }
+        .user-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: $black;
+        }
+    }
+    .user-image {
+        padding-right: 1rem;
+        img {
+            height: 35px;
+            background: $avatar-bg;
+            padding: 0.2rem;
+            border-radius: 50%;
+        }
+    }
+    .mobile-dropdown {
+        display: none;
+        margin-right: 1rem;
+        @include screen-size(md) {
+            display: block;
+        }
+        .icon {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+// mobile check
+
+#mobile-check{
+    display: none;
+}
+
+#mobile-check:checked {
+    & ~ .right-header-nav {
+        transform: translateX(0);
+        .icon{
+            font-size: $font-size-base;
+        }
+        .user-image{
+            img{
+                height: 25px;
+            }
+        }
+        .user-name{
+            font-size: 0.75rem;
+        }
+    }
+}
