@@ -65,7 +65,24 @@ document.getElementById("sort").innerHTML = fruits.sort();
 fruits.sort();
 document.getElementById("reverse").innerHTML = fruits.reverse();
 
+// find method
+const age = [12, 15, 18, 20, 45];
+document.getElementById("find-array").innerHTML = age;
 
+checkAge = ((age) => {return age>=18});
+document.getElementById("find").innerHTML = age.find(checkAge);
 
+// find index method
+document.getElementById("findIndex").innerHTML = age.findIndex(checkAge);
 
+//every method
+document.getElementById("every").innerHTML = age.every(checkAge);
 
+// filter method
+document.getElementById("filter").innerHTML = age.filter(age=> age >= 18);
+
+//reduce method
+document.getElementById("reduce").innerHTML = age.reduce((acc,val) => {return acc + val});
+
+//includes method
+document.getElementById("includes").innerHTML = age.includes(5);

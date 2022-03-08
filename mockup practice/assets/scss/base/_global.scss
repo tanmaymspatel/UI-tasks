@@ -1,85 +1,86 @@
-*, ::after,::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+// *, ::after,::before{
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
 
 html, body{
     height: 100%;
-}
-
-body{
-    overflow: hidden;
-    font-family: $font-family;
-    font-size: $font-size-base;
-    color: $black;
-}
-
-.text-center{
-    text-align: center;
-}
-
-.h-100{
-    height: 100%;
-}
-
-a{
-    cursor: pointer;
-}
-
-.overflow-hidden{
     overflow: hidden;
 }
 
-.overflow-vertical{
-    overflow-y: auto;
-    overflow-x: hidden;
-}
+// body{
+//     overflow: hidden;
+//     font-family: $font-family;
+//     font-size: $font-size-base;
+//     color: $black;
+// }
 
-.wrapper{
-    padding: 1rem 0;
-}
+// .text-center{
+//     text-align: center;
+// }
 
-// flex styles
+// .h-100{
+//     height: 100%;
+// }
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
+// a{
+//     cursor: pointer;
+// }
 
-.flex-wrap{
-    flex-wrap: wrap;
-}
+// .overflow-hidden{
+//     overflow: hidden;
+// }
 
-.d-flex{
-    display: flex;
-}
+// .overflow-vertical{
+//     overflow-y: auto;
+//     overflow-x: hidden;
+// }
 
-.flex-column{
-    flex-direction: column;
-}
+// .wrapper{
+//     padding: 1rem 0;
+// }
 
-.flex-grow-1{
-    flex-grow: 1;
-}
+// // flex styles
 
-.flex{
-    &-shrink-1{
-        flex-shrink: 1;
-    }
-    &-shrink-0{
-        flex-shrink: 0;
-    }
-}
+// .row{
+//     display: flex;
+//     flex-wrap: wrap;
+// }
 
-.justify-between{
-    justify-content: space-between;
-}
+// .flex-wrap{
+//     flex-wrap: wrap;
+// }
 
-.justify-center{
-    justify-content: center;
-}
+// .d-flex{
+//     display: flex;
+// }
 
-.align-items-center{
-    align-items: center;
-}
+// .flex-column{
+//     flex-direction: column;
+// }
+
+// .flex-grow-1{
+//     flex-grow: 1;
+// }
+
+// .flex{
+//     &-shrink-1{
+//         flex-shrink: 1;
+//     }
+//     &-shrink-0{
+//         flex-shrink: 0;
+//     }
+// }
+
+// .justify-between{
+//     justify-content: space-between;
+// }
+
+// .justify-center{
+//     justify-content: center;
+// }
+
+// .align-items-center{
+//     align-items: center;
+// }
