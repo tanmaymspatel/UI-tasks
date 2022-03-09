@@ -1,50 +1,62 @@
 // navigation sidebar styling
 #nav-sidebar {
     flex: 0 0 $nav-sidebar-size;
-    border-right: 1px solid $black;
+    border-right: $border-width solid $black;
 
     .side-header {
         height: $header-size;
-        padding-left: $nav-left-padding;
-        margin-left: 0.1rem;
+        margin-left: 3rem;
 
         .brand-logo {
-            height: 1rem;
-            margin-left: 5px;
+            height: 1.5rem;
         }
+    }
+    ul {
+        li {
+            width: 100%;
+        }
+    }
+    figure{
+        margin: 0 0 0rem;
     }
 
     .nav-link {
-        color: $black;
+        // color: $black;
         padding: 0.5rem 0 0.5rem $nav-left-padding;
-        margin: 0.2rem 0 0.2rem 0.1rem;
-        &.active{
-            border-left:5px solid $black;
+        margin: 0.2rem 0 0.2rem 0rem;
+        &.active {
+            border-left: 4px solid $black;
         }
 
         .icon {
             font-size: $icon-size;
-
         }
 
         .nav-text {
-            font-size: $side-nav-text;
+            font-size: $nav-link-font-size;
             padding-left: 1.5rem;
-        }
-    }
-
-    .nav-actions {
-        padding-bottom: 4rem;
-        .user-profile {
-            height: 45px;
-            padding: 0.5rem;
-            border: 1px solid $black;
-            @include border-radius(15px);
         }
     }
 }
 
+.nav-actions {
+    padding-bottom: 4rem;
+    figure {
+        padding: 2rem;
+        border: $border-width solid $black;
+        height: 60px;
+        width: 60px;
+        border-radius: $border-radius;
+        .user-profile {
+            height: 45px;
+            padding: 0.5rem;
+            border: 1px solid $black;
+            background-color: $user-image-bg;
+            border-radius: $border-radius;
+        }
+    }
+}
 
-#sales-sidebar{
-    flex: 0 0 $sales-sidebar-size;
+#sales-sidebar {
+    border-radius: $border-radius;
 }

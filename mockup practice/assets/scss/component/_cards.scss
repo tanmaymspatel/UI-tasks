@@ -1,13 +1,26 @@
 .card {
-    width: 50%;
-    padding: 0 1.5rem;
     margin: 1rem 0;
     @include position($position:relative);
-    .card-inner {
-        padding: 1.5rem;
+    .card-body {
+        padding: $inner-padding;
         border-radius: $border-radius;
+    }
+    .card-name, .card-number{
+        font-weight: 600;
+    }
+    .card-name {
+        font-size: 1.5rem;
+    }
+    .card-line {
+        font-size: 1rem;
+        padding-bottom: 1rem;
     }
     .icon-counter-arrow {
         @include position($position:absolute, $top:20px, $right:50px);
+    }
+    .card-up-arrow{
+        .icon{
+            transform: rotate(-90deg);
+        }
     }
 }

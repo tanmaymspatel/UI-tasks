@@ -1,27 +1,23 @@
 .main-content {
-    padding: $main-content-padding;
+    padding: 0 $main-content-padding 0 0;
 
     .introduction {
-        padding: 0 1rem;
 
-        h1{
-            font-size: 1.25rem;
+        .user-title{
+            font-size: 2rem;
         }
 
-        h4{
-            font-size: 0.5rem;
+        .user-subtitle{
+            font-size: 0.75rem;
             font-weight: 400;
         }
 
         .filter-products {
-            padding: 0.5rem;
-            margin: 1rem 0 1rem 1rem;
-            border: 1px solid $black;
-            border-radius: 10px;
-            width: 15%;
+            border: $border-width solid $black;
+            border-radius: $border-radius;   
+            .icon{
+                cursor: pointer;
+            } 
         }
     }
-}
-.cards-wrapper{
-    margin: 0 -0.5rem;
 }

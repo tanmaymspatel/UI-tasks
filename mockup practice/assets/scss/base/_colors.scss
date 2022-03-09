@@ -6,11 +6,19 @@ $info: #e5e1d8;
 $white: #fff;
 $black: #000;
 
-$card-colors:(
-    "sales": $warning,
-    "profit": $success,
-    "orders": $primary,
-    "visits": $black,
-)
+//sidebar
+$user-image-bg: #e5e4e9;
+
+// counter row
+$counter-row-bg: #e5e1d8;
 
 
+
+$theme-colors: (
+    "primary": $primary,
+    "warning": $warning,
+    "success": $success,
+    "info": $info,
+    "white": $white,
+    "black": $black,
+);

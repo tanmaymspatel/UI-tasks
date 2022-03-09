@@ -23,9 +23,9 @@
             </div>
             <!-- end : navigation sidebr header -->
             <div class="h-100">
-                <nav class="d-flex flex-column justify-between h-100">
+                <nav class="d-flex flex-column justify-content-between h-100">
                     <!-- start : navigation options list -->
-                    <ul class="nav nav-options flex-grow-1">
+                    <ul class="nav nav-options">
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center active" href="">
                                 <span class="icon icon-home"></span>
@@ -66,9 +66,13 @@
                     <!-- end : navigation options list -->
 
                     <!-- start : navigation actionss list -->
-                    <ul class="nav nav-actions">
-                        <li class="nav-item user-image">
-                            <a href=""><img class="user-profile" src="./assets/images/user-profile.svg" alt="User Profile Image">
+                    <ul class="nav nav-actions d-flex flex-column">
+                        <li class="nav-item user-image d-flex align-items-center justify-content-center">
+                            <a href="">
+                                <figure class="d-flex align-items-center justify-content-center">
+                                    <img class="user-profile" src="./assets/images/user-profile.svg"
+                                        alt="User Profile Image">
+                                </figure>
                             </a>
                         </li>
                         <h4 class="user-name">David Milan</h4>
@@ -79,202 +83,211 @@
         </aside>
         <!-- end : navigation sidebar -->
 
+        <div class="row flex-grow-1 px-5">
 
-        <div class="flex-grow-1 d-flex flex-column ali">
-            <!-- start : header -->
-            <header id="header" class="flex-shrink-0 d-flex align-items-center">
-                <div class="header-search d-flex align-items-center">
-                    <label for="serch"><span class="icon icon-search"></span></label>
-                    <input type="search" id="search" placeholder="Search here for states">
-                </div>
-            </header>
-            <!-- end : header -->
+            <div class="col-8">
+                <!-- start : header -->
+                <header id="header" class="flex-shrink-0 d-flex align-items-center">
+                    <div class="header-search d-flex align-items-center">
+                        <label for="search"><span class="icon icon-search"></span></label>
+                        <input type="search" id="search" placeholder="Search here for states">
+                    </div>
+                </header>
+                <!-- end : header -->
 
-            <!-- start : main content -->
-            <main class="main-content flex-grow-1">
-                <div class="introduction d-flex">
-                    <div class="flex-grow-1">
-                        <h1>Hello David</h1>
-                        <h4>Welcome Back !</h4>
-                    </div>
-                    <div class="filter-products d-flex align-items-center justify-center">
-                        <input type="search" id="filter" placeholder="filters">
-                        <label for="filter"><span class="icon icon-filter"></span></label>
-                    </div>
-                </div>
-                <!-- start : counter row -->
-                <div class="wrapper counter-wrapper">
-                    <div class="row">
-                        <div class="counter views-counter">
-                            <div class="counter-icon">
-                                <span class="icon icon-views"></span>
-                            </div>
-                            <h5 class="counter-name">
-                                views
-                            </h5>
-                            <h3 class="counter-number">
-                                500
-                            </h3>
-                            <h5 class="counter-details">
-                                Per Day
-                            </h5>
+                <!-- start : main content -->
+                <main class="main-content flex-grow-1">
+                    <div class="introduction d-flex align-items-center">
+                        <div class="col-10">
+                            <h1 class="user-title">Hello David</h1>
+                            <h4 class="user-subtitle">Welcome Back !</h4>
                         </div>
-                        <div class="counter visits-counter">
-                            <div class="counter-icon">
-                                <span class="icon icon-compass"></span>
+                        <div class=" col-2">
+
+                            <div class=" filter-products p-2">
+                                <input type="search" id="filter" placeholder="filters">
+                                <label for="filter"><span class="icon icon-filter"></span></label>
                             </div>
-                            <h5 class="counter-name">
-                                visits
-                            </h5>
-                            <h3 class="counter-number">
-                                2000
-                            </h3>
-                            <h5 class="counter-details">
-                                Per Minutes
-                            </h5>
-                        </div>
-                        <div class="counter orders-counter">
-                            <div class="counter-icon">
-                                <span class="icon icon-orders"></span>
-                            </div>
-                            <h5 class="counter-name">
-                                orders
-                            </h5>
-                            <h3 class="counter-number">
-                                5100
-                            </h3>
-                            <h5 class="counter-details">
-                                Per Day
-                            </h5>
                         </div>
                     </div>
-                </div>
-                <!-- end : counter row -->
+                    <!-- start : counter row -->
+                    <div class="wrapper counter-wrapper">
+                        <div class="row">
+                            <div class="counter views-counter">
+                                <div class="counter-icon">
+                                    <span class="icon icon-views"></span>
+                                </div>
+                                <h5 class="counter-name">
+                                    views
+                                </h5>
+                                <h3 class="counter-number">
+                                    500
+                                </h3>
+                                <h5 class="counter-details">
+                                    Per Day
+                                </h5>
+                            </div>
+                            <div class="counter visits-counter">
+                                <div class="counter-icon">
+                                    <span class="icon icon-compass"></span>
+                                </div>
+                                <h5 class="counter-name">
+                                    visits
+                                </h5>
+                                <h3 class="counter-number">
+                                    2000
+                                </h3>
+                                <h5 class="counter-details">
+                                    Per Minutes
+                                </h5>
+                            </div>
+                            <div class="counter orders-counter">
+                                <div class="counter-icon">
+                                    <span class="icon icon-orders"></span>
+                                </div>
+                                <h5 class="counter-name">
+                                    orders
+                                </h5>
+                                <h3 class="counter-number">
+                                    5100
+                                </h3>
+                                <h5 class="counter-details">
+                                    Per Day
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end : counter row -->
 
-                <!-- start : cards row -->
-                <div class="wrapper cards-wrapper">
-                    <div class="row">
-                        <!-- start : sales card -->
-                        <div class="card sales-card">
-                            <div class="card-inner">
-                                <div class="d-flex">
-                                    <div class="card-details">
-                                        <h3 class="card-name">Sales</h3>
-                                        <h4 class="card-line">Total Sales Today</h4>
-                                        <h2 class="card-number">$500</h2>
+                    <!-- start : cards row -->
+                    <div class="wrapper cards-wrapper">
+                        <div class="row">
+                            <!-- start : sales card -->
+                            <div class="card col-6 sales-card">
+                                <div class="card-body bg-warning bg-opacity-25">
+                                    <div class="d-flex">
+                                        <div class="card-details">
+                                            <h3 class="card-name">Sales</h3>
+                                            <h4 class="card-line">Total Sales Today</h4>
+                                            <h2 class="card-number">$500</h2>
+                                        </div>
+                                        <div class="card-statistics">
+                                            55%
+                                        </div>
                                     </div>
-                                    <div class="card-statistics">
-                                        55%
+                                    <div class="card-down-arrow"><span
+                                            class="icon icon-counter-arrow text-warning"></span></div>
+                                </div>
+                            </div>
+                            <!-- end : sales card -->
+
+                            <!-- start : profit card -->
+                            <div class="card col-6 profit-card">
+                                <div class="card-body bg-success bg-opacity-25">
+                                    <div class="d-flex">
+                                        <div class="card-details">
+                                            <h3 class="card-name">Profit</h3>
+                                            <h4 class="card-line">Per Day Ratio</h4>
+                                            <h2 class="card-number">$150</h2>
+                                        </div>
+                                        <div class="card-statistics">
+                                            30%
+                                        </div>
+                                    </div>
+                                    <div class="card-down-arrow"><span
+                                            class="icon icon-counter-arrow text-success"></span></div>
+                                </div>
+                            </div>
+                            <!-- end : profit card -->
+
+                            <!-- start : orders card -->
+                            <div class="card col-6 orders-card">
+                                <div class="card-body bg-primary bg-opacity-25">
+                                    <div class="d-flex">
+                                        <div class="card-details">
+                                            <h3 class="card-name">Orders</h3>
+                                            <h4 class="card-line">Total order Today</h4>
+                                            <h2 class="card-number">1000</h2>
+                                        </div>
+                                        <div class="card-statistics">
+                                            80%
+                                        </div>
+                                    </div>
+                                    <div class="card-up-arrow"><span
+                                            class="icon icon-counter-arrow text-primary"></span></div>
+                                </div>
+                            </div>
+                            <!-- end : orders card -->
+
+                            <!-- start : visits card -->
+                            <div class="card col-6 visits-card">
+                                <div class="card-body bg-black bg-opacity-25">
+                                    <div class="d-flex">
+                                        <div class="card-details">
+                                            <h3 class="card-name">Visits</h3>
+                                            <h4 class="card-line">Total Visit Today</h4>
+                                            <h2 class="card-number">400</h2>
+                                        </div>
+                                        <div class="card-statistics">
+                                            70%
+                                        </div>
+                                    </div>
+                                    <div class="card-up-arrow"><span class="icon icon-counter-arrow text-black"></span>
                                     </div>
                                 </div>
-                                <div class="card-down-arrow"><span class="icon icon-counter-arrow"></span></div>
                             </div>
+                            <!-- end : visits card -->
                         </div>
-                        <!-- end : sales card -->
+                    </div>
+                    <!-- end : cards row -->
+                </main>
+                <!-- start : main content -->
 
-                        <!-- start : profit card -->
-                        <div class="card profit-card">
-                            <div class="card-inner">
-                                <div class="d-flex">
-                                    <div class="card-details">
-                                        <h3 class="card-name">Profit</h3>
-                                        <h4 class="card-line">Per Day Ratio</h4>
-                                        <h2 class="card-number">$150</h2>
-                                    </div>
-                                    <div class="card-statistics">
-                                        30%
-                                    </div>
-                                </div>
-                                <div class="card-down-arrow"><span class="icon icon-counter-arrow"></span></div>
-                            </div>
-                        </div>
-                        <!-- end : profit card -->
-
-                        <!-- start : orders card -->
-                        <div class="card orders-card">
-                            <div class="card-inner">
-                                <div class="d-flex">
-                                    <div class="card-details">
-                                        <h3 class="card-name">Orders</h3>
-                                        <h4 class="card-line">Total order Today</h4>
-                                        <h2 class="card-number">1000</h2>
-                                    </div>
-                                    <div class="card-statistics">
-                                        80%
-                                    </div>
-                                </div>
-                                <div class="card-down-arrow"><span class="icon icon-counter-arrow"></span></div>
-                            </div>
-                        </div>
-                        <!-- end : orders card -->
-
-                        <!-- start : visits card -->
-                        <div class="card visits-card">
-                            <div class="card-inner">
-                                <div class="d-flex">
-                                    <div class="card-details">
-                                        <h3 class="card-name">Visits</h3>
-                                        <h4 class="card-line">Total Visit Today</h4>
-                                        <h2 class="card-number">400</h2>
-                                    </div>
-                                    <div class="card-statistics">
-                                        70%
-                                    </div>
-                                </div>
-                                <div class="card-down-arrow"><span class="icon icon-counter-arrow"></span></div>
-                            </div>
-                        </div>
-                        <!-- end : visits card -->
-                    </div>
-                </div>
-                <!-- end : cards row -->
-            </main>
-            <!-- start : main content -->
-
-        </div>
-        <!-- start : sales sidebar -->
-        <aside id="sales-sidebar" class="flex-shrink-0">
-            <h3>Sales Revenue</h3>
-            <div class="sales-details">
-                <div class="d-flex justify-between">
-                    <div class="icons">
-                        <span>icon</span>
-                    </div>
-                    <div class="details">
-                        <h4>230k</h4>
-                        <h5>Sales</h5>
-                    </div>
-                </div>
-                <div class="d-flex justify-between">
-                    <div class="icons">
-                        <span>icon</span>
-                    </div>
-                    <div class="details">
-                        <h4>8.549k</h4>
-                        <h5>Customers</h5>
-                    </div>
-                </div>
-                <div class="d-flex justify-between">
-                    <div class="icons">
-                        <span>icon</span>
-                    </div>
-                    <div class="details">
-                        <h4>1.423k</h4>
-                        <h5>Products</h5>
-                    </div>
-                </div>
-                <div class="d-flex justify-between">
-                    <div class="icons">
-                        <span>icon</span>
-                    </div>
-                    <div class="details">
-                        <h4>$9745</h4>
-                        <h5>Revenue</h5>
-                    </div>
-                </div>
             </div>
-        </aside>
-        <!-- start : sales sidebar -->
+            <!-- start : sales sidebar -->
+            <aside id="sales-sidebar" class="col-4 p-5 my-4 bg-black text-white">
+                <h3 class="sales-sidebar-heading">Sales Revenue</h3>
+                <div class="sales-details">
+                    <div class="d-flex">
+                        <div class="icons">
+                            <span class="icon icon-home"></span>
+                        </div>
+                        <div class="details">
+                            <h4>230k</h4>
+                            <h5>Sales</h5>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="icons">
+                            <span class="icon icon-home"></span>
+                        </div>
+                        <div class="details">
+                            <h4>8.549k</h4>
+                            <h5>Customers</h5>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="icons">
+                            <span class="icon icon-home"></span>
+                        </div>
+                        <div class="details">
+                            <h4>1.423k</h4>
+                            <h5>Products</h5>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="icons">
+                            <span class="icon icon-home"></span>
+                        </div>
+                        <div class="details">
+                            <h4>$9745</h4>
+                            <h5>Revenue</h5>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!-- start : sales sidebar -->
+        </div>
     </div>
 
 </body>

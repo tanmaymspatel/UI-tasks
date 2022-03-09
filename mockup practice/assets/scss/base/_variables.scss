@@ -4,29 +4,44 @@ $font-size-base : 1rem;
 
 // general
 $border-radius: 15px;
+$circle-radius : 50%;
+$link-color : $black;
+$border-width : 2px;
+
 // header
 $header-size: 70px;
 
 
 
 // navigation sidebar
-$nav-sidebar-size: 200px;
+$nav-sidebar-size: 250px;
 $nav-sidebar-width: 210px;
 $right-sidebar-width:250px;
 $nav-sideheader-height: 100px;
-$icon-size: 1rem;
-$side-nav-text: 0.85rem;
+
+
+$icon-size: 1.5rem;
+$nav-link-font-size: 1rem;
 $nav-icon-color: $black;
 $nav-left-padding: 2.5rem;
 $nav-border-left: 5px;
 $nav-margin-left:0.1rem;
 
-$side-header-margin-left: calc($nav-margin-left + $nav-border-left);
-
 
 // main content
-$main-content-padding: 1.5rem;
+$main-content-padding: 2rem;
+
+
+// card
+$card-border-width:0;
+$inner-padding : 2rem;
+
+
+
 
 // sales sidebar
 $sales-sidebar-size: 250px;
+
+
+
 
