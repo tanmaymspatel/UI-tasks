@@ -1,18 +1,23 @@
 // header search
 
-input[type="search"]{
-    border:none;
+input[type="search"] {
+    border: none;
     outline: none;
 }
-
-#search{
-    padding-left: 0.75rem;
-   &::placeholder{
-       padding-left: 10px;
-   }
+.form-control {
+    &:focus {
+        box-shadow: none;
+    }
 }
 
-#filter {
-    width: 50%;
-    cursor: pointer;
-}
+// #search {
+//     padding-left: 0.75rem;
+//     &::placeholder {
+//         padding-left: 10px;
+//     }
+// }
+
+// #filter {
+//     width: 50%;
+//     cursor: pointer;
+// }

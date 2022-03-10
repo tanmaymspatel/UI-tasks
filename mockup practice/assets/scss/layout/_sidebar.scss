@@ -1,19 +1,13 @@
 // navigation sidebar styling
 #nav-sidebar {
     flex: 0 0 $nav-sidebar-size;
+    min-width: $nav-sidebar-size;
     border-right: $border-width solid $black;
 
     .side-header {
         height: $header-size;
-        margin-left: 3rem;
-
         .brand-logo {
             height: 1.5rem;
-        }
-    }
-    ul {
-        li {
-            width: 100%;
         }
     }
     figure{
@@ -21,11 +15,12 @@
     }
 
     .nav-link {
-        // color: $black;
+        border-left: $nav-borderleft-width solid transparent;
         padding: 0.5rem 0 0.5rem $nav-left-padding;
         margin: 0.2rem 0 0.2rem 0rem;
-        &.active {
-            border-left: 4px solid $black;
+        &.active,
+        &:hover {
+            border-color:  $black;
         }
 
         .icon {
@@ -34,15 +29,13 @@
 
         .nav-text {
             font-size: $nav-link-font-size;
-            padding-left: 1.5rem;
+            padding-left: $nav-text-padding-left;
         }
     }
 }
 
 .nav-actions {
-    padding-bottom: 4rem;
     figure {
-        padding: 2rem;
         border: $border-width solid $black;
         height: 60px;
         width: 60px;
@@ -50,7 +43,7 @@
         .user-profile {
             height: 45px;
             padding: 0.5rem;
-            border: 1px solid $black;
+            border: $border-width solid $black;
             background-color: $user-image-bg;
             border-radius: $border-radius;
         }
@@ -58,5 +51,20 @@
 }
 
 #sales-sidebar {
+    flex: 0 0 $sales-sidebar-size;
+    min-width: $sales-sidebar-size;
     border-radius: $border-radius;
+    .icon{
+        font-size: 1.25rem;
+        border-radius: $circle-radius;
+    }
+    .details{
+        h4{
+            font-size: 1.25rem;
+        }
+        h5{
+            font-size: 0.75rem;
+            color: $grey-text-color;
+        }
+    }
 }

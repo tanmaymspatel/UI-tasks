@@ -1,0 +1,56 @@
+// .progress-circle {
+//     position: relative;
+//     display: inline-block;
+//     margin: 1rem;
+//     width: 120px;
+//     height: 120px;
+//     border-radius: 50%;
+//     background-color: transparent;
+//     &::after {
+//         content: "";
+//         display: inline-block;
+//         width: 100%;
+//         height: 100%;
+//         border-radius: 50%;
+//         -webkit-animation: colorload 2s;
+//         animation: colorload 2s;
+//     }
+//     span {
+//         font-size: 1rem;
+//         color: $black;
+//         position: absolute;
+//         left: 50%;
+//         top: 50%;
+//         display: block;
+//         width: 60px;
+//         height: 60px;
+//         line-height: 60px;
+//         margin-left: -30px;
+//         margin-top: -30px;
+//         text-align: center;
+//         border-radius: 50%;
+//         background: #fff;
+//         z-index: 1;
+//         &::after {
+//             content: "%";
+//             font-weight: 600;
+//             color: $black;
+//         }
+//     }
+//     &.progress-55:after {
+//         background-image: linear-gradient(-72deg, $black 50%, transparent 50%, transparent),
+//             linear-gradient(270deg, $black 50%, transparent 50%, transparent);
+//     }
+//     &.progress-30:after {
+//         background-image: linear-gradient(90deg, transparent 50%, transparent 50%, transparent),
+//             linear-gradient(198deg, $black 50%, transparent 50%, transparent);
+//     }
+//     &.progress-80:after {
+//         background-image: linear-gradient(18deg, $black 50%, transparent 50%, transparent),
+//             linear-gradient(270deg, $black 50%, transparent 50%, transparent);
+//     }
+//     &.progress-70:after {
+//         background-image: linear-gradient(-18deg, $black 50%, transparent 50%, transparent),
+//             linear-gradient(270deg, $black 50%, transparent 50%, transparent);
+//     }
+// }

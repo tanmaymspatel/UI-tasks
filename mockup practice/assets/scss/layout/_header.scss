@@ -1,9 +1,7 @@
 #header{
     height: $header-size;   
-    .header-search{
-        border: 1px solid $black;
+    .header-search{ 
         border-radius: $border-radius;
-        padding: 0.2rem 7rem 0.2rem 0.5rem;
         .icon{
             cursor: pointer;
         }

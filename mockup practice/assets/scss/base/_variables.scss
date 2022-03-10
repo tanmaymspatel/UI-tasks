@@ -9,16 +9,14 @@ $link-color : $black;
 $border-width : 2px;
 
 // header
-$header-size: 70px;
+$header-size: 100px;
 
 
 
 // navigation sidebar
 $nav-sidebar-size: 250px;
-$nav-sidebar-width: 210px;
-$right-sidebar-width:250px;
 $nav-sideheader-height: 100px;
-
+$nav-borderleft-width: 4px;
 
 $icon-size: 1.5rem;
 $nav-link-font-size: 1rem;
@@ -26,6 +24,8 @@ $nav-icon-color: $black;
 $nav-left-padding: 2.5rem;
 $nav-border-left: 5px;
 $nav-margin-left:0.1rem;
+$nav-text-padding-left: 1.5rem;
+
 
 
 // main content
@@ -40,7 +40,7 @@ $inner-padding : 2rem;
 
 
 // sales sidebar
-$sales-sidebar-size: 250px;
+$sales-sidebar-size: 400px;
 
 
 
