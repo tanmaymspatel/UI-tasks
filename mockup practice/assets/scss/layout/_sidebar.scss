@@ -2,7 +2,6 @@
 #nav-sidebar {
     flex: 0 0 $nav-sidebar-size;
     min-width: $nav-sidebar-size;
-    border-right: $border-width solid $black;
 
     .side-header {
         height: $header-size;
@@ -36,14 +35,14 @@
 
 .nav-actions {
     figure {
-        border: $border-width solid $black;
+        border: 1px solid $black;
         height: 60px;
         width: 60px;
         border-radius: $border-radius;
         .user-profile {
             height: 45px;
             padding: 0.5rem;
-            border: $border-width solid $black;
+            border: 1px solid $black;
             background-color: $user-image-bg;
             border-radius: $border-radius;
         }

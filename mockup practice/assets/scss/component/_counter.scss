@@ -1,40 +1,22 @@
 .counter-wrapper {
-    background-color: #e5e1d875;
     border-radius: $border-radius;
     padding: $inner-padding;
 }
 
 .counter {
-    width: 33.3333%;
-
     .counter-icon {
-        display: flex;
-
         .icon {
             font-size: 1.5rem;
-            padding: 0.5rem;
-            background-color:$counter-row-bg;
             border-radius: $circle-radius;
         }
     }
 
     .counter-name, .counter-details {
         font-size: 0.85rem;
-        font-weight: 400;
         color: $grey-text-color;
     }
 
     .counter-number {
         font-size: 1.75rem;
-        padding-top: 0.25rem;
-        font-weight: 600;
-    }
-    .counter-name{
-        padding-top: 1.25rem;
-    }
-
-    .counter-details {
-        padding-top: 0.25rem;
-    
     }
 }

@@ -37,12 +37,14 @@ html, body {
   --bs-info: #e5e1d8;
   --bs-white: #fff;
   --bs-black: #000;
+  --bs-counter-icon: #e5e1d8;
   --bs-primary-rgb: 129, 187, 201;
   --bs-warning-rgb: 193, 135, 95;
   --bs-success-rgb: 134, 187, 141;
   --bs-info-rgb: 229, 225, 216;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
+  --bs-counter-icon-rgb: 229, 225, 216;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -341,6 +343,10 @@ html, body {
 
 .border-black {
   border-color: #000 !important;
+}
+
+.border-counter-icon {
+  border-color: #e5e1d8 !important;
 }
 
 .border-1 {
@@ -1241,6 +1247,11 @@ html, body {
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-counter-icon {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-counter-icon-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-body {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
@@ -1310,6 +1321,11 @@ html, body {
 .bg-black {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-counter-icon {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-counter-icon-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-body {
@@ -6379,6 +6395,14 @@ progress {
   color: black;
 }
 
+.link-counter-icon {
+  color: #e5e1d8;
+}
+
+.link-counter-icon:hover, .link-counter-icon:focus {
+  color: #eae7e0;
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -8449,7 +8473,6 @@ textarea.form-control-lg {
       -ms-flex: 0 0 250px;
           flex: 0 0 250px;
   min-width: 250px;
-  border-right: 2px solid #000;
 }
 
 #nav-sidebar .side-header {
@@ -8484,7 +8507,7 @@ textarea.form-control-lg {
 }
 
 .nav-actions figure {
-  border: 2px solid #000;
+  border: 1px solid #000;
   height: 60px;
   width: 60px;
   border-radius: 15px;
@@ -8493,16 +8516,16 @@ textarea.form-control-lg {
 .nav-actions figure .user-profile {
   height: 45px;
   padding: 0.5rem;
-  border: 2px solid #000;
+  border: 1px solid #000;
   background-color: #e5e4e9;
   border-radius: 15px;
 }
 
 #sales-sidebar {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 400px;
-          flex: 0 0 400px;
-  min-width: 400px;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
+  min-width: 300px;
   border-radius: 15px;
 }
 
@@ -8542,46 +8565,22 @@ textarea.form-control-lg {
 }
 
 .counter-wrapper {
-  background-color: #e5e1d875;
   border-radius: 15px;
   padding: 2rem;
 }
 
-.counter {
-  width: 33.3333%;
-}
-
-.counter .counter-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .counter .counter-icon .icon {
   font-size: 1.5rem;
-  padding: 0.5rem;
-  background-color: #e5e1d8;
   border-radius: 50%;
 }
 
 .counter .counter-name, .counter .counter-details {
   font-size: 0.85rem;
-  font-weight: 400;
   color: #a1acb0;
 }
 
 .counter .counter-number {
   font-size: 1.75rem;
-  padding-top: 0.25rem;
-  font-weight: 600;
-}
-
-.counter .counter-name {
-  padding-top: 1.25rem;
-}
-
-.counter .counter-details {
-  padding-top: 0.25rem;
 }
 
 .card {
@@ -8623,6 +8622,125 @@ textarea.form-control-lg {
 .card .card-up-arrow .icon {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+}
+
+.progress {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+
+.progress.progress-bar {
+  border-color: #000;
+}
+
+.progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 8px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-value {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #000;
+  line-height: 135px;
+  text-align: center;
+  position: absolute;
+  top: -5%;
+  left: 10%;
+}
+
+.progress.progress-90 .progress-left .progress-bar {
+  -webkit-transform: rotate(144deg);
+          transform: rotate(144deg);
+}
+
+.progress.progress-90 .progress-right .progress-bar {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.progress.progress-30 .progress-left .progress-bar {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.progress.progress-30 .progress-right .progress-bar {
+  -webkit-transform: rotate(105deg);
+          transform: rotate(105deg);
+}
+
+.progress.progress-80 .progress-left .progress-bar {
+  -webkit-transform: rotate(105deg);
+          transform: rotate(105deg);
+}
+
+.progress.progress-80 .progress-right .progress-bar {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.progress.progress-70 .progress-left .progress-bar {
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
+}
+
+.progress.progress-70 .progress-right .progress-bar {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 input[type="search"] {

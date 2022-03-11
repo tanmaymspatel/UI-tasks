@@ -12,7 +12,7 @@ $grey-text-color: #a1acb0;
 $user-image-bg: #e5e4e9;
 
 // counter row
-$counter-row-bg: #e5e1d8;
+$counter-icon-color: #e5e1d8;
 
 // input
 $input-group-addon-bg :$white;
@@ -27,4 +27,5 @@ $theme-colors: (
     "info": $info,
     "white": $white,
     "black": $black,
+    "counter-icon" : $counter-icon-color,
 );
