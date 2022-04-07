@@ -1,0 +1,117 @@
+.progress {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    &.progress-bar{
+        border-color: $black;
+    }
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 8px solid transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    & > span {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+    .progress-left {
+        left: 0;
+        .progress-bar {
+            left: 100%;
+            border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+            border-left: 0;
+            -webkit-transform-origin: center left;
+            transform-origin: center left;
+        }
+    }
+    .progress-right {
+        right: 0;
+        .progress-bar {
+            left: -100%;
+            border-top-left-radius: 80px;
+            border-bottom-left-radius: 80px;
+            border-right: 0;
+            -webkit-transform-origin: center right;
+            transform-origin: center right;
+        }
+    }
+    .progress-bar {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border-width: 8px;
+        border-style: solid;
+        position: absolute;
+        top: 0;
+    }
+    .progress-value {
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        font-size: 24px;
+        color: $black;
+        line-height: 135px;
+        text-align: center;
+        position: absolute;
+        top: -5%;
+        left: 10%;
+    }
+    &.progress-90{
+        .progress-left{
+            .progress-bar{
+                transform: rotate(144deg);
+            }
+        }
+        .progress-right{
+            .progress-bar{
+                transform: rotate(180deg);
+            }
+        }
+    }
+    &.progress-30{
+        .progress-left{
+            .progress-bar{
+                transform: rotate(0deg);
+            }
+        }
+        .progress-right{
+            .progress-bar{
+                transform: rotate(105deg);
+            }
+        }
+    }
+    &.progress-80{
+        .progress-left{
+            .progress-bar{
+                transform: rotate(105deg);
+            }
+        }
+        .progress-right{
+            .progress-bar{
+                transform: rotate(180deg);
+            }
+        }
+    }
+    &.progress-70{
+        .progress-left{
+            .progress-bar{
+                transform: rotate(70deg);
+            }
+        }
+        .progress-right{
+            .progress-bar{
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
