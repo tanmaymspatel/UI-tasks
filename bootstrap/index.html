@@ -13,46 +13,52 @@
 <body>
     <div class="d-flex h-100">
         <!-- start : Side bar -->
-        <aside id="sidebar" class="d-flex flex-column h-100">
-            <div class="side-header">
-                Logo
+        <input type="checkbox" id="toggle">
+        <aside id="sidebar" class="d-flex flex-column h-100 position-relative">
+            <label for="toggle">
+                <span class="icon-toggle cursor-pointer position-absolute"></span>
+            </label>
+            <div class="side-header d-flex align-items-center ps-3">
+                <figure class="m-0">
+                    <img class="brand-logo cursor-pointer" src="assets/images/brand-logo.svg" alt="brand-logo">
+                </figure>
             </div>
             <div class="d-flex flex-column h-100">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
+                <ul class="navbar-nav flex-grow-1 overflow-verticle">
+                    <li class="nav-item py-2 active">
+                        <a class="nav-link ps-3" href="">
                             <span class="icon icon-home"></span>
-                            <span class="nav-text">Home</span>
+                            <span class="nav-text fw-bold ps-3">Home</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
+                    <li class="nav-item py-2">
+                        <a class="nav-link ps-3" href="">
                             <span class="icon icon-projects"></span>
-                            <span class="nav-text">Projects</span>
+                            <span class="nav-text fw-bold ps-3">Projects</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
+                    <li class="nav-item py-2">
+                        <a class="nav-link ps-3" href="">
                             <span class="icon icon-billings"></span>
-                            <span class="nav-text">Billings</span>
+                            <span class="nav-text fw-bold ps-3">Billings</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
+                    <li class="nav-item py-2">
+                        <a class="nav-link ps-3" href="">
                             <span class="icon icon-user"></span>
-                            <span class="nav-text">Team Members</span>
+                            <span class="nav-text fw-bold ps-3">Team Members</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
+                    <li class="nav-item py-2">
+                        <a class="nav-link ps-3" href="">
                             <span class="icon icon-statistics"></span>
-                            <span class="nav-text">States</span>
+                            <span class="nav-text fw-bold ps-3">States</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
+                    <li class="nav-item py-2">
+                        <a class="nav-link ps-3" href="">
                             <span class="icon icon-settings"></span>
-                            <span class="nav-text">Settings</span>
+                            <span class="nav-text fw-bold ps-3">Settings</span>
                         </a>
                     </li>
                 </ul>
@@ -67,16 +73,16 @@
         </aside>
         <!-- end : Side bar -->
 
-        <div class="flex-grow-1 d-flex p-4">
-            <div class="flex-grow-1">
+        <div class="flex-grow-1 d-flex px-5 py-4 overflow-auto">
+            <div class="flex-grow-1 me-4">
                 <!-- start : Header -->
                 <header id="header">
                     <div class="col-8">
-                        <div class="input-group mb-4">
+                        <div class="input-group mb-4 search-group">
                             <label for="search">
-                                <span class="input-group-text icon icon-search fs-5"></span>
+                                <span class="input-group-text icon icon-search fs-5 border-0 bg-white cursor-pointer"></span>
                             </label>
-                            <input type="text" class="form-control" placeholder="Search For States" id="search">
+                            <input type="text" class="form-control border-0" placeholder="Search For States" id="search">
                         </div>
                     </div>
                 </header>
@@ -92,10 +98,10 @@
                             <h6>Welcome Back!</h6>
                         </div>
                         <div class="col-2">
-                            <div class="input-group mb-4">
-                                <input type="text" class="form-control" placeholder="Filter" id="filter">
+                            <div class="input-group mb-4 filter-group">
+                                <input type="text" class="form-control border-0" placeholder="Filter" id="filter">
                                 <label for="filter">
-                                    <span class="input-group-text icon icon-filter fs-5"></span>
+                                    <span class="input-group-text icon icon-filter fs-5 border-0 bg-white cursor-pointer"></span>
                                 </label>
                             </div>
                         </div>
@@ -103,43 +109,45 @@
                     <!-- end : heading -->
 
                     <!-- start : numbers section -->
-                    <div class="row">
-                        <div class="col-4">
-                            <div>
-                                <span class="icon icon-views"></span>
+                    <div class="counter-section mt-5 mb-3 p-5 bg-secondary bg-opacity-25">
+                        <div class="row">
+                            <div class="col-4">
+                                <div>
+                                    <span class="icon icon-views d-flex align-items-center justify-content-center bg-secondary"></span>
+                                </div>
+                                <p class="pt-4 m-0 text-light fw-bold">Views</p>
+                                <h3 class="pt-2 fs-1 fw-bold">500</h3>
+                                <p class="text-light fw-bold">Per Day</p>
                             </div>
-                            <small>Views</small>
-                            <h3>500</h3>
-                            <small>Per Day</small>
-                        </div>
-                        <div class="col-4">
-                            <div>
-                                <span class="icon icon-compass"></span>
+                            <div class="col-4">
+                                <div>
+                                    <span class="icon d-flex align-items-center justify-content-center bg-secondary icon-compass"></span>
+                                </div>
+                                <p class="pt-4 m-0 text-light fw-bold">visits</p>
+                                <h3 class="pt-2 fs-1 fw-bold">2000</h3>
+                                <p class="text-light fw-bold">Per minutes</p>
                             </div>
-                            <small>visits</small>
-                            <h3>2000</h3>
-                            <small>Per minutes</small>
-                        </div>
-                        <div class="col-4">
-                            <div>
-                                <span class="icon icon-orders"></span>
+                            <div class="col-4">
+                                <div>
+                                    <span class="icon d-flex align-items-center justify-content-center bg-secondary icon-orders"></span>
+                                </div>
+                                <p class="pt-4 m-0 text-light fw-bold">Orders</p>
+                                <h3 class="pt-2 fs-1 fw-bold">5100</h3>
+                                <p class="text-light fw-bold">Per Day</p>
                             </div>
-                            <small>Orders</small>
-                            <h3>5100</h3>
-                            <small>Per Day</small>
                         </div>
                     </div>
-                    <!-- start : numbers section -->
+                    <!-- end : numbers section -->
 
                     <!-- start : card section -->
-                    <div class="py-5">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="d-flex justify-content-between py-4">
+                    <div class="py-5 card-section">
+                        <div class="row g-5">
+                            <div class="col-6 position-relative">
+                                <div class="d-flex justify-content-between cards p-5 bg-warning bg-opacity-25">
                                     <div>
-                                        <h4>Sales</h4>
-                                        <small>Total Sales Today</small>
-                                        <h2>$500</h2>
+                                        <h4 class="fw-bold">Sales</h4>
+                                        <small class="text-light fw-bold">Total Sales Today</small>
+                                        <h2 class="fw-bold pt-3">$500</h2>
                                     </div>
                                     <div class="card-statistics">
                                         <div class="progress progress-80"> <span class="progress-left"> <span
@@ -150,15 +158,15 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <span class="icon icon-arrow-right-down"></span>
+                                    <span class="icon d-flex align-items-center justify-content-center bg-secondary icon-arrow-right-down text-warning position-absolute"></span>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="d-flex justify-content-between py-4">
+                            <div class="col-6 position-relative">
+                                <div class="d-flex justify-content-between cards p-5 bg-success bg-opacity-25">
                                     <div>
-                                        <h4>Profit</h4>
-                                        <small>Per day ratio</small>
-                                        <h2>$150</h2>
+                                        <h4 class="fw-bold">Profit</h4>
+                                        <small class="text-light fw-bold">Per day ratio</small>
+                                        <h2 class="fw-bold pt-3">$150</h2>
                                     </div>
                                     <div class="card-statistics">
                                         <div class="progress progress-80"> <span class="progress-left"> <span
@@ -169,15 +177,15 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <span class="icon icon-arrow-right-down"></span>
+                                    <span class="icon icon-arrow-right-down text-success position-absolute"></span>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="d-flex justify-content-between py-4">
+                            <div class="col-6 position-relative">
+                                <div class="d-flex justify-content-between cards p-5 bg-info bg-opacity-25">
                                     <div>
-                                        <h4>Orders</h4>
-                                        <small>Total Orders Today</small>
-                                        <h2>1000</h2>
+                                        <h4 class="fw-bold">Orders</h4>
+                                        <small class="text-light fw-bold">Total Orders Today</small>
+                                        <h2 class="fw-bold pt-3">1000</h2>
                                     </div>
                                     <div class="card-statistics">
                                         <div class="progress progress-80"> <span class="progress-left"> <span
@@ -188,15 +196,15 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <span class="icon icon-arrow-up-right"></span>
+                                    <span class="icon icon-arrow-up-right text-info position-absolute"></span>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="d-flex justify-content-between py-4">
+                            <div class="col-6 position-relative">
+                                <div class="d-flex justify-content-between cards p-5 bg-black bg-opacity-10">
                                     <div>
-                                        <h4>Visits</h4>
-                                        <small>Total Visits Today</small>
-                                        <h2>400</h2>
+                                        <h4 class="fw-bold">Visits</h4>
+                                        <small class="text-light fw-bold">Total Visits Today</small>
+                                        <h2 class="fw-bold pt-3">400</h2>
                                     </div>
                                     <div class="card-statistics">
                                         <div class="progress progress-80"> <span class="progress-left"> <span
@@ -207,7 +215,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <span class="icon icon-arrow-up-right"></span>
+                                    <span class="icon icon-arrow-up-right position-absolute"></span>
                                 </div>
                             </div>
                         </div>
@@ -218,50 +226,50 @@
 
             </div>
             <!-- start : Revenue side bar -->
-            <aside id="revenue-sidebar" class="p-3">
-                <h4>Sales Revenue</h4>
+            <aside id="revenue-sidebar" class="p-3 ps-5 bg-black text-white">
+                <h4 class="py-3">Sales Revenue</h4>
                 <div class="row">
                     <div class="col-12">
-                        <div class="d-flex">
+                        <div class="d-flex my-2">
                             <div>
-                                <span class="icon icon-sales"></span>
+                                <span class="d-flex align-items-center justify-content-center text-black bg-white icon icon-sales"></span>
                             </div>
                             <div class="ms-4">
-                                <h3>230k</h3>
-                                <small>Sales</small>
+                                <h5 class="m-0">230k</h5>
+                                <small class="p-0 text-grey">Sales</small>
                             </div>
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="d-flex">
+                        <div class="d-flex my-2">
                             <div>
-                                <span class="icon icon-user"></span>
+                                <span class="d-flex align-items-center justify-content-center text-black bg-white icon icon-user"></span>
                             </div>
                             <div class="ms-4">
-                                <h3>8.549k</h3>
-                                <small>Customers</small>
+                                <h5 class="m-0">8.549k</h5>
+                                <small class="p-0 text-grey">Customers</small>
                             </div>
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="d-flex">
+                        <div class="d-flex my-2">
                             <div>
-                                <span class="icon icon-products"></span>
+                                <span class="d-flex align-items-center justify-content-center text-black bg-white icon icon-products"></span>
                             </div>
                             <div class="ms-4">
-                                <h3>1.423k</h3>
-                                <small>Products</small>
+                                <h5 class="m-0">1.423k</h5>
+                                <small class="p-0 text-grey">Products</small>
                             </div>
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="d-flex">
+                        <div class="d-flex my-2">
                             <div>
-                                <span class="icon icon-pie-chart"></span>
+                                <span class="d-flex align-items-center justify-content-center text-black bg-white icon icon-pie-chart"></span>
                             </div>
                             <div class="ms-4">
-                                <h3>$9745</h3>
-                                <small>Revenue</small>
+                                <h5 class="m-0">$9745</h5>
+                                <small class="p-0 text-grey">Revenue</small>
                             </div>
                         </div>
                     </div>

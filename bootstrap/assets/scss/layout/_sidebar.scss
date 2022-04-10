@@ -1,3 +1,67 @@
+#sidebar {
+    flex: 0 0 $nav-sidebar-size;
+    min-width: $nav-sidebar-size;
+    border-right: 2px solid $grey;
+    transition: $transition;
+    .nav-item {
+        border-left: 3px solid transparent;
+        transition: $transition;
+        &.active{
+            border-color: $black;
+        }
+        &:hover{
+            border-color: $black;
+            background-color: rgba($color: $black, $alpha: 0.1);
+        }
+    }
+    .side-header {
+        min-height: $side-header-size;
+    }
+
+    .brand-logo {
+        height: 20px;
+        width: 20px;
+    }
+    .icon-toggle{
+        font-size: 2rem;
+        top: 50%;
+        right: 0;
+    }
+}
+
+
+#revenue-sidebar {
+    flex: 0 0 $sales-sidebar-size;
+    min-width: $sales-sidebar-size;
+    border-radius: $border-radius;
+    .icon{
+        height: 45px;
+        width: 45px;
+        border-radius: $circle-radius;
+        font-size: 1.25rem;
+    }
+}
+
+#toggle{
+    display: none;
+}
+
+#toggle:checked {
+    &~ #sidebar{
+        flex: 0 0 100px;
+        min-width: 100px;
+        .nav-link{
+            .nav-text{
+                transform: translateX(500px);
+            }
+        }
+        .icon-toggle{
+            transform: rotateX(180);
+        }
+    }
+}
+
+
 // #toggle{
 //     display: none;
 // }
@@ -9,7 +73,7 @@
 //     transition: all 0.4s;
 //     .nav-link,.brand{
 //         padding: 0.5rem 2rem;
-        
+
 //         .icons{
 //             padding-right: 1.5rem;
 //         }
@@ -55,7 +119,7 @@
 //     .brand-name{
 //         transform: all 0.4s;
 //         transform: translateX(-120px);
-       
+
 //     }
 //         .sidebar-toggle{
 //             transform: translateX(-105px);
@@ -79,5 +143,5 @@
 //             transform: translateX(-73px);
 //           }
 //     }
-    
+
 // }

@@ -1,4 +1,18 @@
 // // Card styles goes here
+
+.card-section{
+    .cards{
+        border-radius: $border-radius;
+    }
+    .icon{
+        right: 50px;
+        top: 20px;
+    }
+}
+
+
+
+
 // .card-wrapper{
 //     background-color: #f9f8f3;
 //     border-radius: $card-border-radius;

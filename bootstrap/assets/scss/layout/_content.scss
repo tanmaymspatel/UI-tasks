@@ -1,16 +1,15 @@
+.counter-section{
+    border-radius: $border-radius;
+    .icon{
+        height: 40px;
+        width: 40px;
+        border-radius: $circle-radius;
+        font-size: 1.25rem;
+    }
+}
 
 
-// .sales-revenue{
-//     border-radius: $border-radius;
-//     padding:2rem 3.5rem;
-//     color: $white;
-//     .icon-wrapper{
-//         margin-right: 2rem;
-//         height: 50px;
-//         width: 50px;
-//         overflow: hidden;
-//         border-radius: $circle-radius;
-//     } 
-// }
-
-
+.search-group, .filter-group{
+    border: 3px solid $grey;
+    border-radius: 10px;
+}

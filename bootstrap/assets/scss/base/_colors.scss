@@ -1,3 +1,26 @@
+// main colors 
+
+$black:#000000;
+$primary: $black;
+$secondary: #e4dfd3;
+$success: #96cf9a;
+$info: #89c7d6;
+$warning: #c1885f;
+$white: #fff;
+$grey: #f5f5f5; 
+$light: #b0b4b5;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "black":      $black,
+  "white":      $white,
+  "grey":       $grey,
+  "light":      $light,
+);
 // //color for themes
 // $primary: #151515;
 // $secondary: #b5b4b0;
@@ -24,14 +47,3 @@
 
 // //input border focus color
 // $input-focus-border-color:none;
-
-// $theme-colors: (
-//   "primary":    $primary,
-//   "secondary":  $secondary,
-//   "success":    $success,
-//   "info":       $info,
-//   "warning":    $warning,
-//   "light":      $light,
-//   "dark":       $dark,
-//   "white":      $white,
-// );

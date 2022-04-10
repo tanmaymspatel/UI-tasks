@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'app';
-  src:  url('fonts/app.eot?z3729u');
-  src:  url('fonts/app.eot?z3729u#iefix') format('embedded-opentype'),
-    url('fonts/app.ttf?z3729u') format('truetype'),
-    url('fonts/app.woff?z3729u') format('woff'),
-    url('fonts/app.svg?z3729u#app') format('svg');
+  src:  url('fonts/app.eot?27jmvh');
+  src:  url('fonts/app.eot?27jmvh#iefix') format('embedded-opentype'),
+    url('fonts/app.ttf?27jmvh') format('truetype'),
+    url('fonts/app.woff?27jmvh') format('woff'),
+    url('fonts/app.svg?27jmvh#app') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -48,6 +48,9 @@
 }
 .icon-pie-chart:before {
   content: "\e902";
+}
+.icon-toggle:before {
+  content: "\e900";
 }
 .icon-arrow-right-down:before {
   content: "\e90e";
