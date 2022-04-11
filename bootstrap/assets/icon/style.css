@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'app';
-  src:  url('fonts/app.eot?27jmvh');
-  src:  url('fonts/app.eot?27jmvh#iefix') format('embedded-opentype'),
-    url('fonts/app.ttf?27jmvh') format('truetype'),
-    url('fonts/app.woff?27jmvh') format('woff'),
-    url('fonts/app.svg?27jmvh#app') format('svg');
+  src:  url('fonts/app.eot?cim5me');
+  src:  url('fonts/app.eot?cim5me#iefix') format('embedded-opentype'),
+    url('fonts/app.ttf?cim5me') format('truetype'),
+    url('fonts/app.woff?cim5me') format('woff'),
+    url('fonts/app.svg?cim5me#app') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -51,6 +51,9 @@
 }
 .icon-toggle:before {
   content: "\e900";
+}
+.icon-hamburger:before {
+  content: "\e905";
 }
 .icon-arrow-right-down:before {
   content: "\e90e";

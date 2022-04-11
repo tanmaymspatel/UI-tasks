@@ -1,3 +1,10 @@
+.icon-hamburger{
+    top:10px;
+    left:10px;
+    font-size: 1.25rem;
+    z-index: 1001;
+}
+
 .counter-section{
     border-radius: $border-radius;
     .icon{
@@ -9,7 +16,14 @@
 }
 
 
-.search-group, .filter-group{
-    border: 3px solid $grey;
-    border-radius: 10px;
+
+
+// small device hamburger menu
+
+#hamburger:checked{
+    &~ #sidebar{
+        @include media-breakpoint-down(md){
+            transform: translateX(0);
+        }
+    }
 }
