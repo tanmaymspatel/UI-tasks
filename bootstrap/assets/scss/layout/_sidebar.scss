@@ -3,64 +3,75 @@
     min-width: $nav-sidebar-size;
     border-right: 2px solid $grey;
     transition: $transition;
-    @include media-breakpoint-down(md){
+
+    @include media-breakpoint-down(md) {
         position: absolute;
         z-index: 1000;
         background-color: $white;
         transform: translateX(-200px);
     }
-    .nav-item {
-        border-left: 3px solid transparent;
-        transition: $transition;
-        &.active{
+
+    .side-header {
+        border-left: $sidebar-text-border-left solid transparent;
+        min-height: $side-header-size;
+
+        .brand-logo {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    .nav-link {
+        border-left: $sidebar-text-border-left solid transparent;
+        // transition: $transition;
+
+        &.active {
             border-color: $black;
         }
-        &:hover{
+
+        &:hover {
             border-color: $black;
             background-color: rgba($color: $black, $alpha: 0.1);
         }
     }
-    .side-header {
-        border-left: 3px solid transparent;
-        min-height: $side-header-size;
+
+
+    .nav-text {
+        font-weight: 500;
+        white-space: nowrap;
     }
 
-    .brand-logo {
-        height: 20px;
-        width: 20px;
-    }
-    .profile-image{
+
+
+    .profile-image {
         height: 50px;
         width: 50px;
         border: 1px solid $black;
         border-radius: 10px;
     }
-    .profile-active{
-        height:10px;
-        width:10px;
+
+    .profile-active {
+        height: 10px;
+        width: 10px;
         border-radius: $circle-radius;
         top: 40px;
         right: 70px;
         background-color: $success;
     }
-    .profile-name{
+
+    .profile-name {
         transition: $transition;
     }
-   
+
 }
 
-.toggle-label{
-    font-size: 2rem;
-    top: 50%;
-    left: 200px;
-    transition: $transition;
-}
 
 #revenue-sidebar {
     flex: 0 0 $sales-sidebar-size;
     min-width: $sales-sidebar-size;
     border-radius: $border-radius;
-    .icon{
+
+    .icon {
         height: 45px;
         width: 45px;
         border-radius: $circle-radius;
@@ -68,118 +79,53 @@
     }
 }
 
-#toggle{
+// sidebar toggle
+
+#toggle {
     display: none;
 }
 
-#toggle:checked {
-    &~ #sidebar{
-        flex: 0 0 70px;
-        min-width: 70px;
-        
-        .nav-link{
-            .nav-text{
-                transform: translateX(500px);
-            }
-        }
-        .icon{
-            font-size: 1.25rem;
-            transition: $transition;
-        }
-        .profile-active{
-            right:7px;
-        }
-        .profile-name{
-            transform: translateX(500px);
-        }
-    }
-    &~ .toggle-label{
-        left : 70px;
-        transform: rotate(180deg);
+.toggle-label {
+    top: 50%;
+    left: 180px;
+    transition: $transition;
+
+    .icon-toggle {
+        font-size: 1.5rem;
+        padding: 5px;
+        border-radius: $circle-radius;
+
     }
 }
 
 
-// #toggle{
-//     display: none;
-// }
+#toggle:checked {
+    &~#sidebar {
+        flex: 0 0 70px;
+        min-width: 70px;
 
-// .sidebar{
-//     flex: 0 0 250px;
-//     border-right:$border-width solid $border-color;
-//     overflow: hidden;
-//     transition: all 0.4s;
-//     .nav-link,.brand{
-//         padding: 0.5rem 2rem;
+        .nav-link {
+            .nav-text {
+                transform: translateX(500px);
+            }
+        }
 
-//         .icons{
-//             padding-right: 1.5rem;
-//         }
-//     }
+        .icon {
+            font-size: 1.25rem;
+            transition: $transition;
+        }
 
-//     .nav-link{
-//         font-weight: $font-weight-bold;
-//         border-left: 3px solid transparent;
-//         transition: 0.4s all;
-//         white-space: nowrap;
+        .profile-active {
+            right: 7px;
+        }
 
-//         &:hover{
-//             border-left: 3px solid $primary;   
-//             color: $secondary; 
-//         }
-//     }
-//     .avtar{
-//         height: 50px;
-//         width: 50px;
-//         padding: 0.35rem;
-//         border-radius: $border-radius;
-//         border:$border-width solid $border-color;
-//         position: relative;
+        .profile-name {
+            transform: translateX(500px);
+        }
+    }
 
-//         &::after{
-//             content: '';
-//             @include position(absolute,auto,0,-3px,auto);           
-//             height: 10px;
-//             width: 10px;
-//             border-radius: $circle-radius;
-//             background-color:$success;
-//             z-index: 99;
-//         }
-//         .avtar-img{
-//             border-radius: $border-radius;
-//         }
-//     }
-// }
-
-// #toggle:checked ~ .sidebar{
-//     flex : 0 0 70px;
-//     width:70px;
-//     .brand-name{
-//         transform: all 0.4s;
-//         transform: translateX(-120px);
-
-//     }
-//         .sidebar-toggle{
-//             transform: translateX(-105px);
-//     }
-//     .nav-link,.brand{
-//         padding: 0.5rem 20px;
-//     }
-//     .nav-link-details{
-//         display: none
-//     }   
-//     .user-name{
-//         display: none
-//     }
-// }
-// .sidebar-toggle{
-//     transition: all 0.4s;
-// }
-// @include media-breakpoint-down(sm) { 
-//     #toggle:checked ~ .sidebar{
-//         .sidebar-toggle{
-//             transform: translateX(-73px);
-//           }
-//     }
-
-// }
+    &~.toggle-label {
+        left: 50px;
+        transform: rotate(180deg);
+    }
+}
